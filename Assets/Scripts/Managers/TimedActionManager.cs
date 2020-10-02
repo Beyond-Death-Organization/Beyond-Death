@@ -81,6 +81,13 @@ public class TimedActionManager
         AddActions();
     }
 
+    public TimedAction AddTimedAction(TimedAction.ActionDelegate action, float time)
+    {
+        var timedAction = new TimedAction(action, time);
+        toAddActions.Add(timedAction);
+        return timedAction;
+    }
+
     public void AddTimedAction(TimedAction action)
     {
         toAddActions.Add(action);
@@ -107,7 +114,6 @@ public class TimedActionManager
         {
             actions.Remove(action);
         }
-
         toRemoveActions.Clear();
     }
 }
