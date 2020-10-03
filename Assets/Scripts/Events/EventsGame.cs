@@ -21,6 +21,7 @@ public class EventsGame : MonoBehaviour
 
 #endregion
 
+
     private Camera mainCamera;
 
     private void Start() {

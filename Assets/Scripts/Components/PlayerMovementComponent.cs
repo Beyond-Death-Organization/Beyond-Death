@@ -16,7 +16,7 @@ public class PlayerMovementComponent : MonoBehaviour
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
         RigidBody = GetComponent<Rigidbody>();
-        GameManager.Instance.OnNextLevel.AddListener(arg0 => transform.position = ((GameObject)GameVariables.References["StartPosition"]).transform.position);
+        GameManager.Instance.OnNextLevel.AddListener(arg0 => transform.position = (GameVariables.References["StartPosition"]).transform.position);
     }
 
     private void FixedUpdate()
