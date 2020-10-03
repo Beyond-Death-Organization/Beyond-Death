@@ -1,59 +1,85 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ObjectFadeComponent : MonoBehaviour
 {
-    private Material[] materials;
+    public static Dictionary<int, ObjectFadeComponent> Objects = new Dictionary<int, ObjectFadeComponent>();
+
+    public float FadeInDelay, FadeOutDelay;
+    public AnimationCurve FadeInCurve, FadeOutCurve;
+
+    private List<Material> materials = new List<Material>();
+    private bool isFadingIn, isFadingOut;
+
+    private bool isFading;
+    private float timeStartFade, timeEndFade;
 
     private void Awake() {
-        materials = GetComponent<Renderer>().materials;
+        Objects.Add(transform.GetInstanceID(), this);
+        Renderer[] renderers = GetComponentsInChildren<Renderer>();
+
+        foreach (Renderer r in renderers) {
+            foreach (Material mat in r.materials) {
+                materials.Add(mat);
+            }
+        }
     }
 
     private void Update() {
-        if(Input.GetKeyDown(KeyCode.P))
-            FadeOut();
-        if(Input.GetKeyDown(KeyCode.O))
-            FadeIn();
+        if (isFadingIn)
+            foreach (Material material in materials) {
+                FadeMat(material, FadeInCurve,  timeEndFade - timeStartFade * Time.deltaTime);
+                timeStartFade += Time.deltaTime;
+            }
+        else if (isFadingOut)
+            foreach (Material material in materials) {
+                FadeMat(material, FadeOutCurve, timeEndFade - timeStartFade * Time.deltaTime);
+                timeStartFade += Time.deltaTime;
+            }
+
+        if (isFading && Time.time >= timeEndFade) {
+            isFading = false;
+            if (isFadingIn) {
+                isFadingIn = false;
+                SetMaterialsOpaque();
+            }
+            if (isFadingOut)
+                isFadingOut = false;
+        }
     }
 
-    private void FadeOut() {
+    public void FadeOut() {
+        isFading = true;
+        isFadingOut = true;
+        isFadingIn = false;
+        timeStartFade = Time.time;
+        timeEndFade = Time.time + FadeOutDelay;
         SetMaterialsTransparent();
-        LeanTween.alpha(gameObject, 0.5f, 1f);
     }
 
-    private void FadeIn() {
-        LeanTween.alpha(gameObject, 1f, 1f).setOnComplete(() => { SetMaterialsOpaque(); });
+    public void FadeIn() {
+        isFading = true;
+        isFadingIn = true;
+        isFadingOut = false;
+        timeStartFade = Time.time;
+        timeEndFade = Time.time + FadeInDelay;
     }
 
     private void SetMaterialsTransparent() {
-#if UNITY_EDITOR
-        Debug.Log("Fade");
-#endif
-        foreach (Material mat in materials) {
-            mat.SetFloat("_Mode", 2);
-            mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-            mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-            mat.SetInt("_ZWrite", 0);
-            mat.DisableKeyword("_ALPHATEST_ON");
-            mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-            mat.EnableKeyword("_ALPHABLEND_ON");
-            mat.renderQueue = 3000;
-        }
+        foreach (Material material in materials)
+            material.ToFadeMode();
     }
 
     private void SetMaterialsOpaque() {
-#if UNITY_EDITOR
-        Debug.Log("Opaque");
-#endif
-        foreach (Material mat in materials) {
-            mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
-            mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
-            mat.SetInt("_ZWrite", 1);
-            mat.DisableKeyword("_ALPHATEST_ON");
-            mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-            mat.DisableKeyword("_ALPHABLEND_ON");
-            mat.renderQueue = -1;
-        }
+        foreach (Material material in materials)
+            material.ToOpaqueMode();
+    }
+
+    private void FadeMat(Material mat, AnimationCurve curve, float time) {
+        Color c = mat.color;
+        c.a = curve.Evaluate(time);
+        mat.color = c;
     }
 }
