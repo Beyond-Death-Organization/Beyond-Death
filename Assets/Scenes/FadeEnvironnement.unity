@@ -974,5 +974,5 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  FadeInDelay: 2
-  FadeOutDelay: 1
+  FadeInDelay: 0.8
+  FadeOutDelay: 0.5
