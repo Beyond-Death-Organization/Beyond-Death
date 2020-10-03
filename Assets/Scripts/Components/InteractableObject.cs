@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Components
 {
+    [RequireComponent(typeof(Collider))]
     public class InteractableObject : MonoBehaviour
     {
         private void OnTriggerEnter(Collider other)
