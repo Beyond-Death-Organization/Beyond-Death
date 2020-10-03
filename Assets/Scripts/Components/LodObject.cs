@@ -13,29 +13,30 @@ public class LodObject : MonoBehaviour
     public BaseOn Baseon;
     public List<MeshFilter> State;
     public MeshFilter MainObject;
+    private int contaminationLevel = 0;
     void Start()
     {
-        switch (Baseon)
+        GameManager.Instance.OnNextLevel.AddListener(level=>
         {
-            case BaseOn.Level:
-                GameManager.Instance.OnNextLevel.AddListener(level=>
-                {
-                    ChangeMesh(level);
-                });
-                break;
-            case BaseOn.DeathCount:
-                GameManager.Instance.OnRestart.AddListener(()=>
-                {
-                    int tmp = PlayerManager.Instance.deathCounter;
-                    ChangeMesh(PlayerManager.Instance.deathCounter);
-                });
-                
-                break;
-        }
+            ChangeMesh(level);
+        });
     }
 
     public void ChangeMesh(int level)
     {
-        MainObject.mesh = State[level].sharedMesh;
+        
+        if (level % 3 == 0)
+            contaminationLevel++;
+        switch (Baseon)
+        {
+            case BaseOn.Level:
+                if(contaminationLevel < State.Count)
+                    MainObject.mesh = State[contaminationLevel].sharedMesh;
+                break;
+            case BaseOn.DeathCount:
+                if(level - 1 < State.Count)
+                    MainObject.mesh = State[level - 1].sharedMesh;
+                break;
+        }
     }
 }
