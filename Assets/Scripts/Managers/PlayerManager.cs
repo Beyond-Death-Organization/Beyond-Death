@@ -8,43 +8,55 @@ using UnityEngine.UI;
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance = null;
-    private List<Transform> corpse;
+    public int deathCounter;
+    private List<GameObject> corpse;
     private GameObject player;
     private GameObject startPos;
     private GameObject deathBody;
     private Image fadeImage;
     private float fadeDuration = 2;
+    private CapsuleCollider playerCollider;
+    private bool deathProcess = false;
     private void Awake() {
+        
         player = GameVariables.References["Player"];
+        playerCollider = player.GetComponent<CapsuleCollider>();
         startPos = GameVariables.References["StartPosition"];
         fadeImage = GameVariables.References["FadeImage"].GetComponent<Image>();
         deathBody = GameVariables.References["DeathBody"];
         fadeImage.canvasRenderer.SetAlpha(0);
         if (Instance == null) {
             Instance = this;
-            corpse = new List<Transform>();
+            corpse = new List<GameObject>();
         }
         else {
             Destroy(gameObject);
         }
     }
 
-    private void Update()
+    private void Start()
     {
-        
+        GameManager.Instance.OnRestart.AddListener(IncreaseDeathCount);
     }
 
+    public void IncreaseDeathCount()
+    {
+        deathCounter++;
+    }
     public void Killplayer()
     {
-        
-        Debug.Log("kill");
-        TimedActionManager.Instance.AddTimedAction(FadeOut, 2);
-        //corpse.Add(GameVariables.References["Player"].transform);
-        //player.transform.position = startPos.transform.position;
+        if (!deathProcess)
+        {
+            //GameManager.Instance.RestartLevel();
+            EventsPlayer.Instance.SetInputs(false);
+            Debug.Log("kill");
+            TimedActionManager.Instance.AddTimedAction(FadeOut, 2);
+            deathProcess = true;
+        }
     }
     public void InstantiateCorpse()
     {
-        Instantiate(deathBody, player.transform.position, player.transform.rotation);
+        corpse.Add(Instantiate(deathBody, player.transform.position, Quaternion.Euler(0,0,90)));
     }
 
     public void FadeIn()
@@ -79,6 +91,8 @@ public class PlayerManager : MonoBehaviour
     {
         InstantiateCorpse();
         player.transform.position = startPos.transform.position;
+        deathProcess = false;
+        EventsPlayer.Instance.SetInputs(true);
         FadeIn();
     }
 }

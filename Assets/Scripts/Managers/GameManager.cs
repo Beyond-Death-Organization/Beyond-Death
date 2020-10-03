@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+    public UnityEvent OnRestartGame = new UnityEvent();
     public UnityEvent OnRestart = new UnityEvent();
     public UnityEvent<int> OnNextLevel = new UnityEvent<int>();
     public int CurrentLevel;
@@ -20,6 +21,7 @@ public class GameManager : MonoBehaviour
     
     public void RestartGame()
     {
+        OnRestartGame?.Invoke();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
