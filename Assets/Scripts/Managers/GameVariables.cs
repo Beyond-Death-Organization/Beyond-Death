@@ -23,6 +23,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 
 #endregion
 
+    public PlayerMovementComponent Player;
     public float Timeline_PlayerRespawnTime;
     public PlayableDirector Timeline_BridgeFalling;
     public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
