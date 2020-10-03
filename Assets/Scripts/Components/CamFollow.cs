@@ -7,7 +7,7 @@ public class CamFollow : MonoBehaviour
 
     public float smoothSpeed = 0.125f;
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         Vector3 desiredPosition = ObjectToStare.position + offSet;
         Vector3 smoothedPosition = Vector3.Slerp(transform.position, desiredPosition, smoothSpeed);
