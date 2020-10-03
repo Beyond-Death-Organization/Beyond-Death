@@ -22,12 +22,7 @@ public class PlayerMovementComponent : MonoBehaviour
     {
         inputs.x = player.GetAxis("Horizontal");
         inputs.y = player.GetAxis("Vertical");
-    }
 
-    private void FixedUpdate() {
-        float horizontal = inputs.x * Speed * Time.fixedDeltaTime;
-        float vertical = inputs.y * Speed * Time.fixedDeltaTime;
-        
-        RigidBody.velocity = new Vector3(horizontal, 0, vertical).normalized;
+        RigidBody.AddForce(new Vector3(inputs.x, 0, inputs.y).normalized * (Speed * Time.deltaTime), ForceMode.VelocityChange);
     }
 }
