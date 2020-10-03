@@ -24,8 +24,15 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 #endregion
 
     public PlayerMovementComponent Player;
-    public float Timeline_PlayerRespawnTime;
-    public PlayableDirector Timeline_BridgeFalling;
+    
+    [Header("Timeline")]
+    public PlayableDirector Timeline_PlayerJumpOffTombeau;
+
+    [Header("UI")] 
+    public Animator CameraFadeIn;
+    public Animator CameraFadeOut;
+    
+    [Header("Wrapper")]
     public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
     public static Dictionary<string, GameObject> References = new Dictionary<string, GameObject>();
     public void OnBeforeSerialize()

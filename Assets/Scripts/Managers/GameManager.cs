@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -18,7 +19,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+    private void Start() {
+        EventsPlayer.Instance.OnPlayerRespawn();
+    }
+
     public void RestartGame()
     {
         OnRestartGame?.Invoke();

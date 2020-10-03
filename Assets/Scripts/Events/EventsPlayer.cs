@@ -28,8 +28,7 @@ public class EventsPlayer : MonoBehaviour
     /// Enable player inputs at the end of timeline
     /// </summary>
     public void OnPlayerRespawn() {
-        GameVariables.Instance.Timeline_BridgeFalling.time = GameVariables.Instance.Timeline_PlayerRespawnTime;
-        GameVariables.Instance.Timeline_BridgeFalling.Play();
+        GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
     }
 
     public void OnPlayerDeath() {
