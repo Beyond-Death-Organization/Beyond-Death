@@ -7,14 +7,11 @@ public class ObjectFadeComponent : MonoBehaviour
 {
     public static Dictionary<int, ObjectFadeComponent> Objects = new Dictionary<int, ObjectFadeComponent>();
 
-    public float FadeInDelay, FadeOutDelay;
-    public AnimationCurve FadeInCurve, FadeOutCurve;
-
     private List<Material> materials = new List<Material>();
-    private bool isFadingIn, isFadingOut;
 
-    private bool isFading;
-    private float timeStartFade, timeEndFade;
+    private Coroutine currentCoroutine;
+
+    private float timeAt = -1;
 
     private void Awake() {
         Objects.Add(transform.GetInstanceID(), this);
@@ -27,59 +24,45 @@ public class ObjectFadeComponent : MonoBehaviour
         }
     }
 
-    private void Update() {
-        if (isFadingIn)
-            foreach (Material material in materials) {
-                FadeMat(material, FadeInCurve,  timeEndFade - timeStartFade * Time.deltaTime);
-                timeStartFade += Time.deltaTime;
-            }
-        else if (isFadingOut)
-            foreach (Material material in materials) {
-                FadeMat(material, FadeOutCurve, timeEndFade - timeStartFade * Time.deltaTime);
-                timeStartFade += Time.deltaTime;
-            }
+    public void Fade(bool isFadingIn, AnimationCurve curve, float delay) {
+        if (currentCoroutine != null)
+            StopCoroutine(currentCoroutine);
 
-        if (isFading && Time.time >= timeEndFade) {
-            isFading = false;
-            if (isFadingIn) {
-                isFadingIn = false;
-                SetMaterialsOpaque();
-            }
-            if (isFadingOut)
-                isFadingOut = false;
+        foreach (Material material in materials) {
+            if (!isFadingIn)
+                material.ToFadeMode();
         }
+
+        currentCoroutine = StartCoroutine(FadeObject(isFadingIn, curve, delay));
     }
 
-    public void FadeOut() {
-        isFading = true;
-        isFadingOut = true;
-        isFadingIn = false;
-        timeStartFade = Time.time;
-        timeEndFade = Time.time + FadeOutDelay;
-        SetMaterialsTransparent();
-    }
+    private IEnumerator FadeObject(bool isFadingIn, AnimationCurve curve, float delay) {
+        float time = 0;
 
-    public void FadeIn() {
-        isFading = true;
-        isFadingIn = true;
-        isFadingOut = false;
-        timeStartFade = Time.time;
-        timeEndFade = Time.time + FadeInDelay;
-    }
+        if (timeAt != -1)
+            time = 1 - timeAt;
 
-    private void SetMaterialsTransparent() {
-        foreach (Material material in materials)
-            material.ToFadeMode();
-    }
+        while (time < delay) {
+            time += Time.deltaTime;
+            foreach (Material material in materials) {
+                Color c = material.color;
+                c.a = curve.Evaluate(time / delay);
+                material.color = c;
+            }
 
-    private void SetMaterialsOpaque() {
-        foreach (Material material in materials)
-            material.ToOpaqueMode();
-    }
+            timeAt = time / delay;
+            yield return 0;
+        }
 
-    private void FadeMat(Material mat, AnimationCurve curve, float time) {
-        Color c = mat.color;
-        c.a = curve.Evaluate(time);
-        mat.color = c;
+        foreach (Material material in materials) {
+            Color c = material.color;
+            c.a = curve.Evaluate(1);
+            material.color = c;
+
+            if (isFadingIn)
+                material.ToOpaqueMode();
+        }
+
+        timeAt = -1;
     }
 }

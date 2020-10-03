@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class TransparentRenderQueue : MonoBehaviour
 {
+    [Tooltip("Animation curve to fade object when player is behind them")]
+    public AnimationCurve FadeInCurve, FadeOutCurve;
+    public float FadeInDelay, FadeOutDelay;
+    
     private Transform camera;
     private int environnementFadeableLayer;
 
@@ -34,7 +38,7 @@ public class TransparentRenderQueue : MonoBehaviour
         //Fade in previous objects that aren't in front of the player anymore
         foreach (ObjectFadeComponent objFadeCompo in previousHits) {
             if (!currentHits.Contains(objFadeCompo)) {
-                objFadeCompo.FadeIn();
+                objFadeCompo.Fade(true, FadeInCurve, FadeInDelay);
                 toRemove.Add(objFadeCompo);
             }
         }
@@ -49,7 +53,7 @@ public class TransparentRenderQueue : MonoBehaviour
         foreach (ObjectFadeComponent objFadeCompo in currentHits) {
             if (!previousHits.Contains(objFadeCompo)) {
                 previousHits.Add(objFadeCompo);
-                objFadeCompo.FadeOut();
+                objFadeCompo.Fade(false, FadeOutCurve, FadeOutDelay);
             }
         }
     }
