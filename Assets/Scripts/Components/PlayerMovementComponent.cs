@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementComponent : MonoBehaviour
 {
+    public bool EnableMovement = true;
     public float Speed;
     private Rigidbody RigidBody;
     public float WorldRotation = -45;
@@ -20,6 +21,8 @@ public class PlayerMovementComponent : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!EnableMovement) { return; }
+        
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
@@ -35,5 +38,4 @@ public class PlayerMovementComponent : MonoBehaviour
             transform.rotation = Quaternion.LookRotation(pos);
         }
     }
-
 }
