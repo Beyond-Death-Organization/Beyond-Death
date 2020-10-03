@@ -12,7 +12,7 @@ public class PlayerMovementComponent : MonoBehaviour
     private Player player;
     private int horizontalAxisId, verticalAxisId;    //TODO TO AVOID STRING COMPARISION
 
-    private Vector3 inputs;
+    private Vector3 inputs = Vector3.zero;
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
         RigidBody = GetComponent<Rigidbody>();
@@ -21,8 +21,16 @@ public class PlayerMovementComponent : MonoBehaviour
     private void Update()
     {
         inputs.x = player.GetAxis("Horizontal");
-        inputs.y = player.GetAxis("Vertical");
+        inputs.z = player.GetAxis("Vertical");
 
-        RigidBody.AddForce(new Vector3(inputs.x, 0, inputs.y).normalized * (Speed * Time.deltaTime), ForceMode.VelocityChange);
+        if ((inputs.x < 0.01f &&  inputs.z < 0.01f) && (inputs.x > -0.01f &&  inputs.z > -0.01f))
+        {
+            inputs = Vector3.zero;
+            RigidBody.velocity = inputs;
+        }
+
+        //transform.forward = forward;
+        
+        RigidBody.AddForce(inputs * (Speed * Time.deltaTime), ForceMode.Impulse);
     }
 }
