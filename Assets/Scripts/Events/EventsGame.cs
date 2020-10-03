@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,6 +20,14 @@ public class EventsGame : MonoBehaviour
     }
 
 #endregion
-    
-    
+
+    private Camera mainCamera;
+
+    private void Start() {
+        mainCamera = Camera.main;
+    }
+
+    public void EnableMainCamera(bool enabled) {
+        mainCamera.gameObject.SetActive(enabled);
+    }
 }
