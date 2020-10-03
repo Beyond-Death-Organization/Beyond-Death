@@ -38,7 +38,7 @@ public class TimedAction
     }
 }
 
-public class TimedActionManager
+public class TimedActionManager : MonoBehaviour
 {
     #region Singleton
 
@@ -48,10 +48,7 @@ public class TimedActionManager
 
     private static TimedActionManager instance;
 
-    public static TimedActionManager Instance
-    {
-        get { return instance ?? (instance = new TimedActionManager()); }
-    }
+    public static TimedActionManager Instance => instance ? instance : instance = new GameObject("TimedActionManager").AddComponent<TimedActionManager>();
 
     #endregion
 
@@ -59,14 +56,14 @@ public class TimedActionManager
     private HashSet<TimedAction> toAddActions;
     private HashSet<TimedAction> toRemoveActions;
 
-    public void PreInitialize()
+    public void Awake()
     {
         actions = new HashSet<TimedAction>();
         toAddActions = new HashSet<TimedAction>();
         toRemoveActions = new HashSet<TimedAction>();
     }
 
-    public void Refresh()
+    public void Update()
     {
         float deltaTime = Time.deltaTime;
 
