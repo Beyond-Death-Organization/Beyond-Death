@@ -24,6 +24,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 #endregion
 
     public PlayerMovementComponent Player;
+    public Animator PlayerAnimtor;
     
     [Header("Timeline")]
     public PlayableDirector Timeline_PlayerJumpOffTombeau;

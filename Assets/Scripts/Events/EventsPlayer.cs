@@ -56,4 +56,8 @@ public class EventsPlayer : MonoBehaviour
     public void ActivatePlayer(bool enabled) {
         GameVariables.Instance.Player.gameObject.SetActive(enabled);
     }
+
+    public void ActivatePlayerAnimator(bool enabled) {
+        GameVariables.Instance.PlayerAnimtor.enabled = enabled;
+    }
 }
