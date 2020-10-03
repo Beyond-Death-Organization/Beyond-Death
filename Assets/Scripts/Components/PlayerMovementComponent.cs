@@ -1,4 +1,5 @@
-﻿using Rewired;
+﻿using System;
+using Rewired;
 using UnityEngine;
 
 public class PlayerMovementComponent : MonoBehaviour
@@ -14,9 +15,10 @@ public class PlayerMovementComponent : MonoBehaviour
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
         RigidBody = GetComponent<Rigidbody>();
+        GameManager.Instance.OnNextLevel.AddListener(arg0 => transform.position = ((GameObject)GameVariables.References["StartPosition"]).transform.position);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
@@ -29,8 +31,9 @@ public class PlayerMovementComponent : MonoBehaviour
         }
         else
         {
-            RigidBody.position += pos * Speed * Time.deltaTime;
+            RigidBody.MovePosition(RigidBody.position + pos * (Speed * Time.deltaTime));
             transform.rotation = Quaternion.LookRotation(pos);
         }
     }
+
 }

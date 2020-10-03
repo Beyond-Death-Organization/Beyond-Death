@@ -1,16 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CamFollow : MonoBehaviour
 {
-    // Start is called before the first frame update
     public Transform ObjectToStare;
     public Vector3 offSet;
-    // Update is called once per frame
-    void Update()
+
+    public float smoothSpeed = 0.125f;
+
+    void LateUpdate()
     {
-        transform.position = ObjectToStare.position + offSet;
+        Vector3 desiredPosition = ObjectToStare.position + offSet;
+        Vector3 smoothedPosition = Vector3.Slerp(transform.position, desiredPosition, smoothSpeed);
+        transform.position = smoothedPosition;
         transform.LookAt(ObjectToStare);
     }
 }
