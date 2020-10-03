@@ -1,11 +1,12 @@
-﻿using UnityEngine;
-using UnityEngine.Playables;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class GameVariables : MonoBehaviour
+public class EventsGame : MonoBehaviour
 {
 #region Singleton
 
-    public static GameVariables Instance = null;
+    public static EventsGame Instance = null;
 
     private void Awake() {
         if (Instance == null) {
@@ -18,7 +19,6 @@ public class GameVariables : MonoBehaviour
     }
 
 #endregion
-
-    public float Timeline_PlayerRespawnTime;
-    public PlayableDirector Timeline_BridgeFalling;
+    
+    
 }
