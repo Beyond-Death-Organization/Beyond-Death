@@ -47,7 +47,6 @@ public class PlayerManager : MonoBehaviour
     {
         if (!deathProcess)
         {
-            //GameManager.Instance.RestartLevel();
             EventsPlayer.Instance.SetInputs(false);
             Debug.Log("kill");
             TimedActionManager.Instance.AddTimedAction(FadeOut, 2);
@@ -90,7 +89,7 @@ public class PlayerManager : MonoBehaviour
     private void ResetPlayer()
     {
         InstantiateCorpse();
-        player.transform.position = startPos.transform.position;
+        GameManager.Instance.NextLevel();
         deathProcess = false;
         EventsPlayer.Instance.SetInputs(true);
         FadeIn();
