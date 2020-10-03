@@ -1,11 +1,14 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
+    public UnityEvent OnRestart = new UnityEvent();
+    public UnityEvent<int> OnNextLevel = new UnityEvent<int>();
+    public int CurrentLevel;
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -22,12 +25,13 @@ public class GameManager : MonoBehaviour
 
     public void RestartLevel()
     {
-        Debug.Log("Restart Level");
+        OnRestart?.Invoke();
     }
 
     public void NextLevel()
     {
-        Debug.Log("Next Level");
+        CurrentLevel          ++         ;
+        OnNextLevel?.Invoke(CurrentLevel);
     }
 }
 
