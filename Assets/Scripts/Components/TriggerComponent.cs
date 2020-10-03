@@ -1,17 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Events;
 
 public class TriggerComponent : MonoBehaviour
 {
-    public UnityEvent OnEnter = new UnityEvent();
-    public UnityEvent OnExit = new UnityEvent();
+    public UnityEvent onTriggerEnter = new UnityEvent();
+
     private void OnTriggerEnter(Collider other)
     {
-        OnEnter?.Invoke();
+        onTriggerEnter?.Invoke();
+        PlayerManager.Instance.Killplayer();
+        GetComponent<Collider>().isTrigger = false;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        OnExit?.Invoke();
-    }
 }

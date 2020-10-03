@@ -14,4 +14,9 @@ public class PlayerManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void Killplayer()
+    {
+        Debug.Log("kill");
+    }
 }

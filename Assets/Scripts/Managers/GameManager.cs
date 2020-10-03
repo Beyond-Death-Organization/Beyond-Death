@@ -1,10 +1,14 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance = null;
-
+    public static GameManager Instance;
+    public UnityEvent OnRestart = new UnityEvent();
+    public UnityEvent<int> OnNextLevel = new UnityEvent<int>();
+    public int CurrentLevel;
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -16,17 +20,18 @@ public class GameManager : MonoBehaviour
     
     public void RestartGame()
     {
-        Debug.Log("Restart Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void RestartLevel()
     {
-        Debug.Log("Restart Level");
+        OnRestart?.Invoke();
     }
 
     public void NextLevel()
     {
-        Debug.Log("Next Level");
+        CurrentLevel          ++         ;
+        OnNextLevel?.Invoke(CurrentLevel);
     }
 }
 
@@ -37,7 +42,7 @@ public class GameManagerEditor : Editor
     {
         GameManager gameManager = GameManager.Instance;
         
-        base.DrawDefaultInspector();
+        DrawDefaultInspector();
 
         GUILayout.BeginVertical();
         if (Application.isPlaying)
