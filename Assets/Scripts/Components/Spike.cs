@@ -13,7 +13,7 @@ namespace Components
         public float Height = 1;
         private bool hasEnter;
         private Vector3 initialPosition;
-
+        public Collider coll;
         private void Awake()
         {
             initialPosition = Spikes.position;
@@ -42,6 +42,13 @@ namespace Components
                 yield return null;
             }
         }
-        
+
+        private void OnDrawGizmos()
+        {
+            if (coll == null) return;
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireCube(coll.bounds.center, coll.bounds.size);
+            Gizmos.DrawLine(transform.position, transform.position + Vector3.up / 2);
+        }
     }
 }
