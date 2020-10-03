@@ -10,7 +10,7 @@ public class CamFollow : MonoBehaviour
     void FixedUpdate()
     {
         Vector3 desiredPosition = ObjectToStare.position + offSet;
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+        Vector3 smoothedPosition = desiredPosition;//Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         transform.position = smoothedPosition;
         transform.LookAt(ObjectToStare);
     }
