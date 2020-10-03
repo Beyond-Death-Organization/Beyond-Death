@@ -25,8 +25,10 @@ public class PlayerMovementComponent : MonoBehaviour
         
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
+        
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
+        
         if ((inputs.x < 0.1f &&  inputs.z < 0.1f) && (inputs.x > -0.1f &&  inputs.z > -0.1f))
         {
             inputs = Vector3.zero;
@@ -34,8 +36,9 @@ public class PlayerMovementComponent : MonoBehaviour
         }
         else
         {
-            RigidBody.MovePosition(RigidBody.position + pos * (Speed * Time.deltaTime));
             transform.rotation = Quaternion.LookRotation(pos);
+            
+            RigidBody.MovePosition(RigidBody.position + pos * (Speed * Time.deltaTime));
         }
     }
 }
