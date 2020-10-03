@@ -1,5 +1,7 @@
-﻿using Rewired;
+﻿using System.Collections.Generic;
+using Rewired;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EventsPlayer : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class EventsPlayer : MonoBehaviour
     }
 
 #endregion
+
+    [HideInInspector] public UnityEvent OnToggleDeadBodies;
 
     /// <summary>
     /// Play end of timeline of bridge falling
@@ -41,5 +45,16 @@ public class EventsPlayer : MonoBehaviour
         foreach (Joystick joystick in ReInput.players.GetPlayer("Player01").controllers.Joysticks) {
             joystick.enabled = enable;
         }
+    }
+
+    /// <summary>
+    /// Called on level start
+    /// </summary>
+    public void ToggleDeadBodies() {
+        OnToggleDeadBodies?.Invoke();
+    }
+
+    public void ActivatePlayer(bool enabled) {
+        GameVariables.Instance.Player.gameObject.SetActive(enabled);
     }
 }

@@ -49,6 +49,10 @@ MonoBehaviour:
     m_Signals:
     - {fileID: 11400000, guid: 1b05227806c45e54aa9c6c1fd19d3649, type: 2}
     - {fileID: 11400000, guid: c3c697f44b91838459abe15a8ea8bed6, type: 2}
+    - {fileID: 11400000, guid: ff733415cc39ce742b6dfe761e4a3c12, type: 2}
+    - {fileID: 11400000, guid: 1005dfa23fa6ca94687b2bbe41c85caa, type: 2}
+    - {fileID: 11400000, guid: 29371303a80d86740a1b553a39cadec3, type: 2}
+    - {fileID: 11400000, guid: a80a3be3a0aeba94f84d56aabf9467eb, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -78,6 +82,62 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1301473523276556965}
+          m_TargetAssemblyTypeName: EventsPlayer, Assembly-CSharp
+          m_MethodName: ActivatePlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1301473523276556965}
+          m_TargetAssemblyTypeName: EventsPlayer, Assembly-CSharp
+          m_MethodName: ActivatePlayer
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1229657115015383385}
+          m_TargetAssemblyTypeName: EventsGame, Assembly-CSharp
+          m_MethodName: EnableMainCamera
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1229657115015383385}
+          m_TargetAssemblyTypeName: EventsGame, Assembly-CSharp
+          m_MethodName: EnableMainCamera
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1301473523276556965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,6 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f0b19c2252e1aa45bcc99cd6e898c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnToggleDeadBodies:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1229657115015383385
 MonoBehaviour:
   m_ObjectHideFlags: 0

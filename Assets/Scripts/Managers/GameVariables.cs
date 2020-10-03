@@ -23,10 +23,11 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 
 #endregion
 
+    public PlayerMovementComponent Player;
     public float Timeline_PlayerRespawnTime;
     public PlayableDirector Timeline_BridgeFalling;
     public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
-    public static Dictionary<string, Object> References = new Dictionary<string, Object>();
+    public static Dictionary<string, GameObject> References = new Dictionary<string, GameObject>();
     public void OnBeforeSerialize()
     {
         Wrapper.Clear();
@@ -37,7 +38,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
-        References = new Dictionary<string, Object>();
+        References = new Dictionary<string, GameObject>();
 
         for (int i = 0; i != Wrapper.Count; i++)
         {
@@ -54,5 +55,5 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 public class ReferenceWrapper
 {
     public string key;
-    public Object value;
+    public GameObject value;
 }
