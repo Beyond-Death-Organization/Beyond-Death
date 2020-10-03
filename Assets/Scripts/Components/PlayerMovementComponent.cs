@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Rewired;
+﻿using Rewired;
 using UnityEngine;
 
 public class PlayerMovementComponent : MonoBehaviour
 {
     public float Speed;
     private Rigidbody RigidBody;
+    public float WorldRotation = -45;
 
     private Player player;
     private int horizontalAxisId, verticalAxisId;    //TODO TO AVOID STRING COMPARISION
@@ -22,15 +20,17 @@ public class PlayerMovementComponent : MonoBehaviour
     {
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
-
-        if ((inputs.x < 0.01f &&  inputs.z < 0.01f) && (inputs.x > -0.01f &&  inputs.z > -0.01f))
+        Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
+        pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
+        if ((inputs.x < 0.1f &&  inputs.z < 0.1f) && (inputs.x > -0.1f &&  inputs.z > -0.1f))
         {
             inputs = Vector3.zero;
             RigidBody.velocity = inputs;
         }
-
-        //transform.forward = forward;
-        
-        RigidBody.AddForce(inputs * (Speed * Time.deltaTime), ForceMode.Impulse);
+        else
+        {
+            RigidBody.position += pos * Speed * Time.deltaTime;
+            transform.rotation = Quaternion.LookRotation(pos);
+        }
     }
 }

@@ -343,6 +343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 50
+  WorldRotation: 45
 --- !u!1 &6281936394090661302
 GameObject:
   m_ObjectHideFlags: 0
