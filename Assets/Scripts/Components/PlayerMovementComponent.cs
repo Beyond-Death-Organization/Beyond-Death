@@ -17,8 +17,8 @@ public class PlayerMovementComponent : MonoBehaviour
     }
 
     private void Update() {
-        float horizontal = player.GetAxis("Horizontal") * Speed;
-        float vertical = player.GetAxis("Vertical") * Speed;
+        float horizontal = player.GetAxis("Horizontal") * Speed * Time.deltaTime;
+        float vertical = player.GetAxis("Vertical") * Speed * Time.deltaTime;
         
         RigidBody.AddForce(horizontal, 0, vertical, ForceMode.VelocityChange);
     }
