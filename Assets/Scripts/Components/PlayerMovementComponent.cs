@@ -29,7 +29,6 @@ public class PlayerMovementComponent : MonoBehaviour
             RigidBody.velocity = inputs;
         }
 
-        //transform.forward = forward;
         
         RigidBody.AddForce(inputs * (Speed * Time.deltaTime), ForceMode.Impulse);
     }

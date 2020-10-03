@@ -42,9 +42,7 @@ public class TimedActionManager : MonoBehaviour
 {
     #region Singleton
 
-    private TimedActionManager()
-    {
-    }
+    private TimedActionManager() { }
 
     private static TimedActionManager instance;
 

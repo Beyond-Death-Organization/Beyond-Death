@@ -54,8 +54,7 @@ public class ObjectFadeComponent : MonoBehaviour
         isFading = true;
         isFadingOut = true;
         isFadingIn = false;
-        timeStartFade = Time.time;
-        timeEndFade = Time.time + FadeOutDelay;
+        timeStartFade = 0;
         SetMaterialsTransparent();
     }
 
@@ -63,8 +62,6 @@ public class ObjectFadeComponent : MonoBehaviour
         isFading = true;
         isFadingIn = true;
         isFadingOut = false;
-        timeStartFade = Time.time;
-        timeEndFade = Time.time + FadeInDelay;
     }
 
     private void SetMaterialsTransparent() {

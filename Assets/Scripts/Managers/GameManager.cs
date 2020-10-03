@@ -1,9 +1,10 @@
 ﻿using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance = null;
+    public static GameManager Instance;
 
     private void Awake() {
         if (Instance == null) {
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
     
     public void RestartGame()
     {
-        Debug.Log("Restart Game");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void RestartLevel()
@@ -37,7 +38,7 @@ public class GameManagerEditor : Editor
     {
         GameManager gameManager = GameManager.Instance;
         
-        base.DrawDefaultInspector();
+        DrawDefaultInspector();
 
         GUILayout.BeginVertical();
         if (Application.isPlaying)
