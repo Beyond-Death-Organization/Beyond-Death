@@ -2,6 +2,7 @@
 using Rewired;
 using UnityEngine;
 
+[RequireComponent(typeof(CharacterController))]
 public class PlayerMovementComponent : MonoBehaviour
 {
     public float Speed;
@@ -26,10 +27,6 @@ public class PlayerMovementComponent : MonoBehaviour
         animator = GetComponent<Animator>();
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
-        GameManager.Instance.OnNextLevel.AddListener(arg0 => {
-            transform.position = spawnPosition;
-            transform.rotation = spawnRotation;
-        });
     }
 
     private void FixedUpdate()
