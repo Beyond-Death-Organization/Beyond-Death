@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8100167e8287a5c468a2bb1e701988f1
+guid: bc521f303602cc1419dc925112b3c0fd
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wall_material
-    second: {fileID: 2100000, guid: b850a009c1fb0f34c8d32f69cd35f2f1, type: 2}
+      name: Pressure_Plate_dart_material
+    second: {fileID: 2100000, guid: e6b8c302c05ea1a48af57af4c0fd22c7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

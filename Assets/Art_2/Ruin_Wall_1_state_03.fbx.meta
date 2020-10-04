@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8100167e8287a5c468a2bb1e701988f1
+guid: d041435b8e298fa44a10a4c51e6062aa
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wall_material
-    second: {fileID: 2100000, guid: b850a009c1fb0f34c8d32f69cd35f2f1, type: 2}
+      name: Ruin_Wall_1_state_03_material
+    second: {fileID: 2100000, guid: d166d7799f153e04998df30c18d07e89, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
