@@ -12,12 +12,17 @@ ModelImporter:
   - first:
       74: 5522812681064789136
     second: Run
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHR_SonojAnaidni_rig_SonojAnaidni_SonojAnaidni_Material
+    second: {fileID: 2100000, guid: 92ad61161a12b864391f28ca05917924, type: 2}
   materials:
     materialImportMode: 1
     materialName: 3
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -44,7 +49,7 @@ ModelImporter:
       name: WakeUp
       takeName: Take 001
       internalID: 0
-      firstFrame: 0
+      firstFrame: 1
       lastFrame: 105
       wrapMode: 1
       orientationOffsetY: 0
@@ -130,7 +135,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.01
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -186,57 +191,57 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.14350013, y: 0.16336617, z: -0.31242514}
+      position: {x: -14.350014, y: 16.336617, z: -31.242514}
       rotation: {x: -0.4790443, y: -0.7056775, z: -0.13871174, w: 0.5032841}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.15278909, y: 0.16393346, z: -0.24277742}
+      position: {x: -15.278909, y: 16.393345, z: -24.277742}
       rotation: {x: 0.50208575, y: 0.49790558, z: 0.50208575, w: -0.49790558}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.054125123, y: 0.1719373, z: -0.27405897}
+      position: {x: -5.4125123, y: 17.19373, z: -27.405897}
       rotation: {x: -0.46354696, y: -0.46354696, z: -0.53397024, w: 0.53397024}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips
-      position: {x: -0, y: 0.07, z: 0}
+      position: {x: -0, y: 7, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest
-      position: {x: -0.0000048845905, y: 0.020298328, z: 0}
+      position: {x: -0.000488459, y: 2.0298328, z: 0}
       rotation: {x: 0, y: 0.3690729, z: -0, w: 0.92940044}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head
-      position: {x: 0.0007469477, y: 0.090379186, z: -0.00079217314}
+      position: {x: 0.07469477, y: 9.037919, z: -0.079217315}
       rotation: {x: -0.13495545, y: 0, z: -0, w: 0.9908517}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest
-      position: {x: -0.07, y: 0, z: 0}
+      position: {x: -7, y: 0, z: 0}
       rotation: {x: 0.02699191, y: -0.257817, z: -0.10056564, w: 0.96056676}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_hand
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm
-      position: {x: -0, y: -0.05, z: 0}
+      position: {x: -0, y: -5, z: 0}
       rotation: {x: -0.057528023, y: 0, z: -0, w: 0.9983439}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest
-      position: {x: 0.07, y: 0, z: 0}
+      position: {x: 7, y: 0, z: 0}
       rotation: {x: -0.0069891363, y: 0.28845263, z: 0.16167466, w: 0.94372004}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_hand
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm
-      position: {x: -0, y: -0.05, z: 0}
+      position: {x: -0, y: -5, z: 0}
       rotation: {x: -0.1184369, y: 0, z: -0, w: 0.9929616}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_backpack
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest
-      position: {x: -0, y: -0.011576365, z: -0.055166166}
+      position: {x: -0, y: -1.1576365, z: -5.516617}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root
@@ -246,97 +251,97 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root
-      position: {x: 0.0000000047683715, y: 0.11040011, z: 0}
+      position: {x: 0.00000047683716, y: 11.040011, z: 0}
       rotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1.0000005, y: 1.0000005, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_chest
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips
-      position: {x: -0.07, y: -1.0658141e-16, z: 7.283063e-16}
+      position: {x: -7, y: -1.0658141e-14, z: 7.283063e-14}
       rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_backpack
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_chest
-      position: {x: 3.5527136e-17, y: -0.011576365, z: -0.055166166}
+      position: {x: 3.5527137e-15, y: -1.1576365, z: -5.516617}
       rotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
       scale: {x: 1.0000005, y: 1.0000005, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_head
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_chest
-      position: {x: -0.0000048845905, y: 0.020298328, z: 1.9539925e-16}
+      position: {x: -0.000488459, y: 2.0298328, z: 1.9539925e-14}
       rotation: {x: -0, y: -1.871696e-23, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1.0000001}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_head_hat
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_head
-      position: {x: 0.0007469477, y: 0.090379186, z: -0.00079217454}
+      position: {x: 0.07469477, y: 9.037919, z: -0.07921746}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_arm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_chest
-      position: {x: -0.07, y: -1.1324275e-16, z: -5.3290704e-17}
+      position: {x: -7, y: -1.1324275e-14, z: -5.3290705e-15}
       rotation: {x: -0, y: -0, z: 0.004363208, w: 0.99999046}
       scale: {x: 1.0000006, y: 1.0000006, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_forearm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_arm
-      position: {x: -0.05, y: 4.440892e-18, z: 0}
+      position: {x: -5, y: 4.440892e-16, z: 0}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1.0000001, y: 1.0000001, z: 0.9999999}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_arm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_chest
-      position: {x: 0.07, y: 1.1546319e-16, z: -1.7763568e-17}
+      position: {x: 7, y: 1.15463195e-14, z: -1.7763568e-15}
       rotation: {x: -0, y: -0, z: 0.99999046, w: 0.004363446}
       scale: {x: 1.000001, y: 1.000001, z: 1.0000001}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_forearm
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_arm
-      position: {x: -0.05, y: 4.440892e-18, z: 0}
+      position: {x: -5, y: 4.440892e-16, z: 0}
       rotation: {x: -0, y: -0, z: -0, w: 1}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips
-      position: {x: 0.02, y: 0.035, z: 0}
+      position: {x: 2, y: 3.5, z: 0}
       rotation: {x: -0.00000015431877, y: -0, z: 1, w: 0}
       scale: {x: 1.0000004, y: 1.0000005, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_knee
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg
-      position: {x: -0.04, y: 4.440892e-18, z: 0}
+      position: {x: -4, y: 4.440892e-16, z: 0}
       rotation: {x: -0, y: -0.00000030874537, z: -0, w: 1}
       scale: {x: 1.0000002, y: 1.0000005, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_knee
-      position: {x: -0.04, y: 1.3322676e-17, z: 0}
+      position: {x: -4, y: 1.3322676e-15, z: 0}
       rotation: {x: -0.00000010919611, y: 0.00000010919611, z: -0.7071068, w: 0.7071068}
       scale: {x: 0.9999998, y: 0.99999994, z: 1.0000002}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips
-      position: {x: 0.02, y: -0.035, z: 0}
+      position: {x: 2, y: -3.5, z: 0}
       rotation: {x: -0, y: -0, z: 1, w: 0}
       scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_knee
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg
-      position: {x: -0.04, y: 4.440892e-18, z: 0}
+      position: {x: -4, y: 4.440892e-16, z: 0}
       rotation: {x: -0, y: -0.000000039284078, z: -0, w: 1}
       scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_knee
-      position: {x: -0.04, y: 1.3322676e-17, z: 0}
+      position: {x: -4, y: 1.3322676e-15, z: 0}
       rotation: {x: -0.00000002777804, y: 0.00000002777804, z: -0.7071068, w: 0.7071068}
       scale: {x: 0.99999994, y: 0.9999998, z: 1.0000001}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_ikHandle_rt_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.15278909, y: 0.16393346, z: -0.24277742}
+      position: {x: -15.278909, y: 16.393345, z: -24.277742}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_ikHandle_lt_foot
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.14350013, y: 0.16336617, z: -0.31242514}
+      position: {x: -14.350014, y: 16.336617, z: -31.242514}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot_poleVector
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.15494603, y: 0.26561457, z: -0.3307421}
+      position: {x: -15.494603, y: 26.561457, z: -33.074207}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot_poleVector
       parentName: CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS
-      position: {x: -0.08495174, y: 0.25413424, z: -0.19826244}
+      position: {x: -8.495174, y: 25.413424, z: -19.826244}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_mesh_grp
@@ -346,12 +351,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_chest
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_mesh_grp
-      position: {x: -0.020004116, y: -0.505, z: 0.035}
+      position: {x: -2.0004115, y: -50.5, z: 3.5}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_head
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_mesh_grp
-      position: {x: -0.005004115, y: -0.4, z: -0.085}
+      position: {x: -0.5004115, y: -40, z: -8.5}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_skeleton_legs
@@ -371,22 +376,22 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_Hat
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_mesh_grp
-      position: {x: -0.005004153, y: -0.035, z: -0.13999997}
+      position: {x: -0.5004153, y: -3.5, z: -13.999997}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_bag
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_mesh_grp
-      position: {x: 0.049995847, y: -0.195, z: -0.03499998}
+      position: {x: 4.9995847, y: -19.5, z: -3.499998}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_Head
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_mesh_grp
-      position: {x: -0.005004153, y: -0.089999996, z: -0.085000016}
+      position: {x: -0.5004153, y: -9, z: -8.500002}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_Chest
       parentName: CHR_SonojAnaidni_rig:SonojAnaidni_mesh_grp
-      position: {x: -0.0100041535, y: -0.195, z: 0.025}
+      position: {x: -1.0004153, y: -19.5, z: 2.5}
       rotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
     - name: CHR_SonojAnaidni_rig:SonojAnaidni_legs
@@ -406,7 +411,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.01
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
