@@ -6,12 +6,9 @@ using UnityEngine;
 public class DrownableWater : TrapComponent
 {
     public bool enabled = true;
-    public Camera Camera;
-    public GameObject AnimatedBody, DeadBody;
+    public GameObject DeadBody;
 
     private void Awake() {
-        AnimationTimeline.stopped += director => { Camera.gameObject.SetActive(false); };
-        AnimationTimeline.stopped += director => { AnimatedBody.SetActive(false); };
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -22,8 +19,6 @@ public class DrownableWater : TrapComponent
             return;
 
         enabled = false;
-        Camera.gameObject.SetActive(true);
-        AnimatedBody.SetActive(true);
         PlayAnimation();
         EventsPlayer.Instance.OnToggleDeadBodies.AddListener((() => { DeadBody.SetActive(true); }));
         //EventsPlayer.Instance.OnToggleDeadBodies.RemoveListener((() => { DeadBody.SetActive(true); }));
