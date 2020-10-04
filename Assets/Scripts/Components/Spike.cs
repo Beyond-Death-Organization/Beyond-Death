@@ -85,7 +85,7 @@ namespace Components
             if (coll == null) return;
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(coll.bounds.center, coll.bounds.size);
-            Gizmos.DrawLine(transform.position, transform.position + Vector3.up / 2);
+            Gizmos.DrawLine(coll.gameObject.transform.position, coll.gameObject.transform.position + Vector3.up / 2);
         }
     }
 }
