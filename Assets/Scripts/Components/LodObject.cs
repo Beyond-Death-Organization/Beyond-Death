@@ -13,6 +13,7 @@ public class LodObject : MonoBehaviour
     public BaseOn Baseon;
     public List<GameObject> State;
     private int contaminationLevel = 0;
+    private int currentLevel;
     void Start()
     {
         GameManager.Instance.OnNextLevel.AddListener(level=>
@@ -23,9 +24,9 @@ public class LodObject : MonoBehaviour
 
     public void ChangeMesh(int level)
     {
-        
-        if (level % 3 == 0)
+        if (level % 3 == 0 && currentLevel != level)
             contaminationLevel++;
+        currentLevel = level;
         switch (Baseon)
         {
             case BaseOn.Level:
