@@ -3,7 +3,12 @@ guid: cd8806002b42e7447b340264522c7fcf
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BirdCage_state_1_material
+    second: {fileID: 2100000, guid: eb8a22e624fc2a042ba977d465b20018, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
