@@ -21,10 +21,6 @@ public class DrownableWater : TrapComponent
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
 
-#if UNITY_EDITOR
-        Debug.Log("Player in water");
-#endif
-
         enabled = false;
         Camera.gameObject.SetActive(true);
         AnimatedBody.SetActive(true);
