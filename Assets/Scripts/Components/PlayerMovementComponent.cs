@@ -23,28 +23,25 @@ public class PlayerMovementComponent : MonoBehaviour
             transform.position = (GameVariables.References["StartPosition"]).transform.position);
     }
 
-    private void Update() {
-        if(player.GetButtonDown("Jump"))
-            animator.SetTrigger("Jump");
-    }
-
-    private void FixedUpdate() {
-        if (EnableMovement) {
-            inputs.x = player.GetAxis("Horizontal");
-            inputs.z = player.GetAxis("Vertical");
-
-            Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
-            pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
-
-            if ((inputs.x < 0.1f && inputs.z < 0.1f) && (inputs.x > -0.1f && inputs.z > -0.1f)) {
-                inputs = Vector3.zero;
-                rigidBody.velocity = inputs;
-            }
-            else {
-                transform.rotation = Quaternion.LookRotation(pos);
-
-                rigidBody.MovePosition(rigidBody.position + pos * (Speed * Time.deltaTime));
-            }
+    private void FixedUpdate()
+    {
+        if (!EnableMovement) { return; }
+        
+        inputs.x = player.GetAxis("Horizontal");
+        inputs.z = player.GetAxis("Vertical");
+        
+        Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
+        pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
+        
+        if (inputs.x < 0.1f &&  inputs.z < 0.1f && (inputs.x > -0.1f &&  inputs.z > -0.1f))
+        {
+            inputs = Vector3.zero;
+            RigidBody.velocity = inputs;
+        }
+        else
+        {
+            transform.rotation = Quaternion.LookRotation(pos);
+            RigidBody.MovePosition(RigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
         
         animator.SetFloat("Speed", rigidBody.velocity.magnitude);
