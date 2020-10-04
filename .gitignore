@@ -65,4 +65,7 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
-build.zip
+*.zip
+
+# Rider
+.[Ii]dea/

@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1148966018144996866
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4119561658035415537}
+  - component: {fileID: 7593275380814139274}
+  m_Layer: 0
+  m_Name: deathGate_door_left
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4119561658035415537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148966018144996866}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4867930322092405312}
+  - {fileID: 1215805608790548417}
+  - {fileID: 7610543419852452248}
+  - {fileID: 4587987903853879392}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7593275380814139274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148966018144996866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc5b25e93a45643a8d72029fcb0cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Baseon: 0
+  State:
+  - {fileID: 5243751799929432314}
+  - {fileID: 1987416122077676923}
+  - {fileID: 7121814192382651170}
+  - {fileID: 3810078390905453274}
+--- !u!1001 &1681480654385985578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4119561658035415537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_Name
+      value: deathGate_door_left_state_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+--- !u!1 &1987416122077676923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+  m_PrefabInstance: {fileID: 1681480654385985578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1215805608790548417 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ae9b88d5a8f18f645b9bd03e149b2ef0, type: 3}
+  m_PrefabInstance: {fileID: 1681480654385985578}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4044645666000111499
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4119561658035415537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_Name
+      value: deathGate_door_left_state_4
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 32de9d6c98c317946961c51743416778, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 32de9d6c98c317946961c51743416778, type: 3}
+--- !u!1 &3810078390905453274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 32de9d6c98c317946961c51743416778, type: 3}
+  m_PrefabInstance: {fileID: 4044645666000111499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4587987903853879392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 32de9d6c98c317946961c51743416778, type: 3}
+  m_PrefabInstance: {fileID: 4044645666000111499}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4901294818582779307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4119561658035415537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+      propertyPath: m_Name
+      value: deathGate_door_left_state_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+--- !u!1 &5243751799929432314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+  m_PrefabInstance: {fileID: 4901294818582779307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4867930322092405312 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6f99efbcc4b9aa944a1b6befe060be97, type: 3}
+  m_PrefabInstance: {fileID: 4901294818582779307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7932155709926446707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4119561658035415537}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_Name
+      value: deathGate_door_left_state_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c1c49da24745844499b4f14757161de5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c1c49da24745844499b4f14757161de5, type: 3}
+--- !u!1 &7121814192382651170 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c1c49da24745844499b4f14757161de5, type: 3}
+  m_PrefabInstance: {fileID: 7932155709926446707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7610543419852452248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c1c49da24745844499b4f14757161de5, type: 3}
+  m_PrefabInstance: {fileID: 7932155709926446707}
+  m_PrefabAsset: {fileID: 0}
