@@ -27,10 +27,8 @@ public class PlayerMovementComponent : MonoBehaviour
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
         GameManager.Instance.OnNextLevel.AddListener(arg0 => {
-            Controller.enabled = false;
             transform.position = spawnPosition;
             transform.rotation = spawnRotation;
-            Controller.enabled = true;
         });
     }
 

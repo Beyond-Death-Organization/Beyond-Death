@@ -8,26 +8,26 @@ public class Spike : TrapComponent
 {
     public float SpikeDelay = 1;
 
-    private bool enabled;
+    private bool spikeEnabled;
 
     private double nextOutputTime;
     private double timer = 0;
 
     private void Start() {
-        nextOutputTime = Random.Range(5f, 10f);
+        nextOutputTime = Random.Range(3f, 7f);
         AnimationTimeline.stopped += director => {
-            enabled = false;
+            spikeEnabled = false;
         };
     }
 
     private void Update() {
-        if (enabled)
+        if (spikeEnabled)
             return; 
         
         timer += Time.deltaTime;
         
         if (timer >= nextOutputTime) {
-            enabled = true;
+            spikeEnabled = true;
             nextOutputTime += SpikeDelay;
 
             AnimationTimeline.Play();
@@ -36,7 +36,7 @@ public class Spike : TrapComponent
     
 
     private void OnTriggerStay(Collider other) {
-        if (!enabled)
+        if (!spikeEnabled)
             return;
         
         //Make sure its player
