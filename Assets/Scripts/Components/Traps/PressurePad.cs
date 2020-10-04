@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Managers;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Playables;
@@ -10,11 +11,22 @@ public class PressurePad : TrapComponent
 {
     public PlayableDirector ReverseAnimation;
     public bool isPlayerTriggable;
+    public GameObject action;
 
     private bool hasAnimationFinished = true;
     private int objectOnPadId = -1;
+    private AudioSource audio;
+    private IPressurePlate IAction;
 
     private void Start() {
+        if(TryGetComponent(out AudioSource audioSource))
+        {
+            audio = audioSource;
+        }
+        if(this.action.TryGetComponent(out IPressurePlate action))
+        {
+            IAction = action;
+        }
         ReverseAnimation.stopped += director => { hasAnimationFinished = true; };
         AnimationTimeline.stopped += director => { hasAnimationFinished = true; };
     }
@@ -33,12 +45,14 @@ public class PressurePad : TrapComponent
         if (!hasAnimationFinished) {
             //AnimationTimeline.time = ReverseAnimation.playableAsset.duration - ReverseAnimation.time;
         }
-
+        IAction.ActionPressurePlateEnter();
         hasAnimationFinished = false;
         PlayAnimation();
     }
 
     private void OnTriggerExit(Collider other) {
+        if(audio != null)
+            AudioManager.Instance.PlayClip("PressurePlate", audio);
         if (!isPlayerTriggable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 return;
@@ -52,7 +66,7 @@ public class PressurePad : TrapComponent
         if (!hasAnimationFinished) {
             //ReverseAnimation.time = AnimationTimeline.playableAsset.duration - AnimationTimeline.time;
         }
-
+        IAction.ActionPressurePlateExit();
         hasAnimationFinished = false;
         ReverseAnimation.Play();
         ReverseAnimation.playableGraph.GetRootPlayable(0).SetSpeed(AnimationSpeed);
