@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -36,7 +38,7 @@ public class GameManager : MonoBehaviour
         OnNextLevel?.Invoke(CurrentLevel);
     }
 }
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(GameManager))]
 public class GameManagerEditor : Editor
 {
@@ -58,3 +60,4 @@ public class GameManagerEditor : Editor
         GUILayout.EndVertical();
     }
 }
+#endif
