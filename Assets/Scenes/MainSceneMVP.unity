@@ -44673,26 +44673,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1953376683, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: m_Center.z
-      value: -0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953376683, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: m_Radius
-      value: 0.08
-      objectReference: {fileID: 0}
-    - target: {fileID: 1953376683, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: m_StepOffset
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1774643451722981459, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 4097
-      objectReference: {fileID: 0}
-    - target: {fileID: 5457287665760192119, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: CollisionModule.collidesWith.m_Bits
-      value: 4097
-      objectReference: {fileID: 0}
     - target: {fileID: 7308975097619041840, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.52
@@ -44737,16 +44717,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7936858275896759430, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 7936858275896759434, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 478595592, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0f4e90646818394b8364889a41e9d49, type: 3}
 --- !u!1001 &4888840648529530620
 PrefabInstance:
