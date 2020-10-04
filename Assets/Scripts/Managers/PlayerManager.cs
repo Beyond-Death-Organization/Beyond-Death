@@ -19,7 +19,7 @@ public class PlayerManager : MonoBehaviour
     private bool deathProcess = false;
     private void Awake() {
         
-        player = GameVariables.References["Player"];
+        player = GameVariables.Instance.Player.gameObject;
         playerCollider = player.GetComponent<CapsuleCollider>();
         startPos = GameVariables.References["StartPosition"];
         fadeImage = GameVariables.References["FadeImage"].GetComponent<Image>();
