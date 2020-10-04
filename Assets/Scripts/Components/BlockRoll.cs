@@ -18,7 +18,7 @@ namespace Components
         private void FixedUpdate()
         {
             var position = transform.position;
-            //position.y = y;
+            //wateposition.y = y;
             body.MovePosition(position);
         }
     }
