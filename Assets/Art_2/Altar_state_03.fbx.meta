@@ -3,7 +3,12 @@ guid: b6b10e81afda98b4489923360aefee11
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Altar_state_03_material
+    second: {fileID: 2100000, guid: 09a8fcbc4ef7de24f957ff43f352af44, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
