@@ -3,7 +3,12 @@ guid: 56f6b946223f22943b6519f7861b6857
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Statue_piece_03_material
+    second: {fileID: 2100000, guid: 417b6ae8c8bce414ca777537c6633d24, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -23,10 +23,12 @@ public class EventsPlayer : MonoBehaviour
 #endregion
 
     [HideInInspector] public UnityEvent OnToggleDeadBodies;
+    public CharacterController cc;
 
     private void Start() {
         GameManager.Instance.OnNextLevel.AddListener(i => { ToggleDeadBodies(); });
     }
+
 
     /// <summary>
     /// Play end of timeline of bridge falling
@@ -46,7 +48,9 @@ public class EventsPlayer : MonoBehaviour
         //Call OnPlayerRespawn in X seconds (TimeManager)
     }
 
-    public void SetInputs(bool enable) {
+    public void SetInputs(bool enable)
+    {
+        cc.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Keyboard.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Mouse.enabled = enable;
         foreach (Joystick joystick in ReInput.players.GetPlayer("Player01").controllers.Joysticks) {
