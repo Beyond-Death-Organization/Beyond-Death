@@ -44,6 +44,6 @@ public class PlayerMovementComponent : MonoBehaviour
             rigidBody.MovePosition(rigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
         
-        animator.SetFloat("Speed", rigidBody.velocity.magnitude);
+        // animator.SetFloat("Speed", rigidBody.velocity.magnitude);
     }
 }
