@@ -26,6 +26,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
     
     [Header("Timeline")]
     public PlayableDirector Timeline_PlayerJumpOffTombeau;
+    public PlayableDirector Totem_Track01, Totem_Track02, Totem_Track03;
 
     [Header("UI")] 
     public Animator CameraFadeIn;

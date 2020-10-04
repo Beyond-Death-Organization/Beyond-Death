@@ -59,6 +59,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5ab634d4c6dd3a24aa71a2563e7c6da2, type: 2}
     - {fileID: 11400000, guid: 0985751a186a9264eb085ee8391ea9d3, type: 2}
     - {fileID: 11400000, guid: 5eeb8083351688c4994c84ba0ef82faf, type: 2}
+    - {fileID: 11400000, guid: 87ff287af8ee2d14089a78af0a43ab19, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -276,6 +277,20 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1301473523276556965}
+          m_TargetAssemblyTypeName: EventsPlayer, Assembly-CSharp
+          m_MethodName: OnTotemPickup
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1301473523276556965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +306,7 @@ MonoBehaviour:
   OnToggleDeadBodies:
     m_PersistentCalls:
       m_Calls: []
+  cc: {fileID: 0}
 --- !u!114 &1229657115015383385
 MonoBehaviour:
   m_ObjectHideFlags: 0
