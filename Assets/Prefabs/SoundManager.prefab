@@ -52,3 +52,5 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: eade7733d240c5647820dab335a692f9, type: 3}
   - AudioName: MusicD
     AudioClip: {fileID: 8300000, guid: 65510c900420bf6479604cd14b608958, type: 3}
+  - AudioName: FootStep
+    AudioClip: {fileID: 8300000, guid: 4e0aac57919e6fd4790688a6a3698beb, type: 3}
