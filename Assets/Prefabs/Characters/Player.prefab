@@ -1556,14 +1556,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5f6ffca54bf4534a89cafaee6ce4e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnableMovement: 1
   Speed: 1
   WorldRotation: 45
   GroundCheck: {fileID: 478595591}
   GroundDistance: 0.4
   GroundMask:
     serializedVersion: 2
-    m_Bits: 4096
+    m_Bits: 15927
   Controller: {fileID: 1953376683}
 --- !u!143 &1953376683
 CharacterController:
@@ -1865,11 +1864,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7703899822525753368, guid: 4963382f4bdcec34e8c5812eb426cc02, type: 3}
   m_PrefabInstance: {fileID: 2402087821102181996}
   m_PrefabAsset: {fileID: 0}
---- !u!198 &5457287665760192119 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7703899822525753371, guid: 4963382f4bdcec34e8c5812eb426cc02, type: 3}
-  m_PrefabInstance: {fileID: 2402087821102181996}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8235127426560837704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1938,10 +1932,5 @@ PrefabInstance:
 --- !u!4 &1774643451722981456 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7703899822525753368, guid: 4963382f4bdcec34e8c5812eb426cc02, type: 3}
-  m_PrefabInstance: {fileID: 8235127426560837704}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1774643451722981459 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7703899822525753371, guid: 4963382f4bdcec34e8c5812eb426cc02, type: 3}
   m_PrefabInstance: {fileID: 8235127426560837704}
   m_PrefabAsset: {fileID: 0}
