@@ -1,0 +1,341 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1136565462587212358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1136565462587212360}
+  - component: {fileID: 1136565462587212361}
+  m_Layer: 0
+  m_Name: Tile_full_grass
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1136565462587212360
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136565462587212358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.19133234, y: 0.019, z: -0.734}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 598799775184528006}
+  - {fileID: 598799776161946053}
+  - {fileID: 598799776779578248}
+  - {fileID: 598799776544872656}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1136565462587212361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136565462587212358}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2fc5b25e93a45643a8d72029fcb0cf9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Baseon: 1
+  State:
+  - {fileID: 217454355421689916}
+  - {fileID: 217454356717831039}
+  - {fileID: 217454357006250290}
+  - {fileID: 217454357375484522}
+  MainObject: {fileID: 4602826893899214115}
+--- !u!1001 &1136565461895007331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1136565462587212360}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_Name
+      value: Tile_full_grass_state_03
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+--- !u!1 &217454357006250290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+  m_PrefabInstance: {fileID: 1136565461895007331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &598799776779578248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4d67ae428ce74564bb640d5bb05c46bc, type: 3}
+  m_PrefabInstance: {fileID: 1136565461895007331}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1136565462129655611
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1136565462587212360}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_Name
+      value: Tile_full_grass_state_04
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+--- !u!1 &217454357375484522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+  m_PrefabInstance: {fileID: 1136565462129655611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &598799776544872656 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6000fdb092fd52d4d99fd9c7ba976291, type: 3}
+  m_PrefabInstance: {fileID: 1136565462129655611}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1136565462546136622
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1136565462587212360}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_Name
+      value: Tile_full_grass_state_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+--- !u!1 &217454356717831039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+  m_PrefabInstance: {fileID: 1136565462546136622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &598799776161946053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 02656d65035b5b142a21740f6e3e650f, type: 3}
+  m_PrefabInstance: {fileID: 1136565462546136622}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1136565463531668845
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1136565462587212360}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+      propertyPath: m_Name
+      value: Tile_full_grass_state_01
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+--- !u!1 &217454355421689916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+  m_PrefabInstance: {fileID: 1136565463531668845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &598799775184528006 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+  m_PrefabInstance: {fileID: 1136565463531668845}
+  m_PrefabAsset: {fileID: 0}
+--- !u!33 &4602826893899214115 stripped
+MeshFilter:
+  m_CorrespondingSourceObject: {fileID: -5754084199372789682, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
+  m_PrefabInstance: {fileID: 1136565463531668845}
+  m_PrefabAsset: {fileID: 0}
