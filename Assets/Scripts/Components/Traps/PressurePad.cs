@@ -12,6 +12,7 @@ public class PressurePad : TrapComponent
     public bool isPlayerTriggable;
 
     private bool hasAnimationFinished = true;
+    private int objectOnPadId = -1;
 
     private void Start() {
         ReverseAnimation.stopped += director => { hasAnimationFinished = true; };
@@ -22,6 +23,10 @@ public class PressurePad : TrapComponent
         if (!isPlayerTriggable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 return;
+        if (objectOnPadId != -1)
+            return;
+        
+        objectOnPadId = other.gameObject.GetInstanceID();
 
         ReverseAnimation.Stop();
         //Start animation from reverse animation time
@@ -37,6 +42,10 @@ public class PressurePad : TrapComponent
         if (!isPlayerTriggable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 return;
+        if (other.gameObject.GetInstanceID() != objectOnPadId)
+            return;
+
+        objectOnPadId = -1;
 
         AnimationTimeline.Stop();
         //Start reverse animation from basic animation time
