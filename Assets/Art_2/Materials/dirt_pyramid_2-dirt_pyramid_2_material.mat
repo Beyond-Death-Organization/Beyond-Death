@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< HEAD
---- !u!114 &-3225793251008321455
-=======
---- !u!114 &-6837132813357675130
->>>>>>> 11d8e2369df68243e29e9152dd8835d8943977a2
+--- !u!114 &-9074535511100700477
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -26,7 +22,6 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: dirt_pyramid_2-dirt_pyramid_2_material
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-<<<<<<< HEAD
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
@@ -34,24 +29,12 @@ Material:
   m_CustomRenderQueue: 2000
   stringTagMap:
     RenderType: Opaque
-=======
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
->>>>>>> 11d8e2369df68243e29e9152dd8835d8943977a2
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 719620a2a08882847af992553ae6597f, type: 3}
-=======
-        m_Texture: {fileID: 8900000, guid: 9cc2c83035dfe4b4e8a743896d5b7bdf, type: 3}
->>>>>>> 11d8e2369df68243e29e9152dd8835d8943977a2
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -59,19 +42,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-<<<<<<< HEAD
         m_Texture: {fileID: 2800000, guid: 719620a2a08882847af992553ae6597f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 719620a2a08882847af992553ae6597f, type: 3}
-=======
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 8900000, guid: 9cc2c83035dfe4b4e8a743896d5b7bdf, type: 3}
->>>>>>> 11d8e2369df68243e29e9152dd8835d8943977a2
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -111,10 +86,6 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-<<<<<<< HEAD
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-=======
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
->>>>>>> 11d8e2369df68243e29e9152dd8835d8943977a2
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []
