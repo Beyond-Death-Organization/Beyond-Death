@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8100167e8287a5c468a2bb1e701988f1
+guid: 6000fdb092fd52d4d99fd9c7ba976291
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wall_material
-    second: {fileID: 2100000, guid: b850a009c1fb0f34c8d32f69cd35f2f1, type: 2}
+      name: Tile_full_grass_state_04_material
+    second: {fileID: 2100000, guid: c6b4050ba33bb4f41be211fef2648c59, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

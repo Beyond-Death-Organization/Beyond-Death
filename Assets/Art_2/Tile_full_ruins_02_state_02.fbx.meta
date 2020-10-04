@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8100167e8287a5c468a2bb1e701988f1
+guid: 2589e56f27a235d43a4b2c483fa846d7
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wall_material
-    second: {fileID: 2100000, guid: b850a009c1fb0f34c8d32f69cd35f2f1, type: 2}
+      name: Tile_full_ruins_02_state_02_material
+    second: {fileID: 2100000, guid: a09d67c45f0340841a16ceab8eb9392b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
