@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2427206478282779587}
   - component: {fileID: 2427206478282779586}
+  - component: {fileID: 3770425512510484082}
   m_Layer: 0
   m_Name: Ruin_Tall_Pillar
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2427206478282779597}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19998568, y: 0.40479887, z: -1.268}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2748763760924775676}
@@ -53,7 +54,19 @@ MonoBehaviour:
   - {fileID: 3273627367721410893}
   - {fileID: 3273627367527314025}
   - {fileID: 3273627368103174936}
-  MainObject: {fileID: 1263903489389255513}
+--- !u!65 &3770425512510484082
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2427206478282779597}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.11, y: 0.35999998, z: 0.099999994}
+  m_Center: {x: 0, y: 0.17999999, z: 0}
 --- !u!1001 &2427206479042720535
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -119,11 +132,6 @@ GameObject:
 --- !u!4 &2748763760924775676 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: efed786b95d7b3f4686a806e42f6811c, type: 3}
-  m_PrefabInstance: {fileID: 2427206479042720535}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &1263903489389255513 stripped
-MeshFilter:
-  m_CorrespondingSourceObject: {fileID: -5754084199372789682, guid: efed786b95d7b3f4686a806e42f6811c, type: 3}
   m_PrefabInstance: {fileID: 2427206479042720535}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2427206479225577033

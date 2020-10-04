@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9129486678276611692}
   - component: {fileID: 9129486678276611693}
+  - component: {fileID: -8666639686066368606}
   m_Layer: 0
   m_Name: Tile_full_ruins_astar
   m_TagString: Untagged
@@ -53,7 +54,19 @@ MonoBehaviour:
   - {fileID: 8246964008406020828}
   - {fileID: 8246964007728513049}
   - {fileID: 8246964008180742069}
-  MainObject: {fileID: 5663013935447477390}
+--- !u!65 &-8666639686066368606
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9129486678276611682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.08, z: 0.5}
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1001 &9129486678681309069
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,11 +203,6 @@ GameObject:
 --- !u!4 &8734954398341399339 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9350915f63fc4884bb9929d8c77366c3, type: 3}
-  m_PrefabInstance: {fileID: 9129486678755206336}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &5663013935447477390 stripped
-MeshFilter:
-  m_CorrespondingSourceObject: {fileID: -5754084199372789682, guid: 9350915f63fc4884bb9929d8c77366c3, type: 3}
   m_PrefabInstance: {fileID: 9129486678755206336}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9129486679529638628

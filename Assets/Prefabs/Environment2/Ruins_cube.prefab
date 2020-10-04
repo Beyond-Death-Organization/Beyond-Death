@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 101225288038369837}
   - component: {fileID: 101225288038369834}
+  - component: {fileID: 5697408920061812899}
   m_Layer: 0
   m_Name: Ruins_cube
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101225288038369835}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.158, y: 0.41547424, z: 0.322}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 499097609893330377}
@@ -53,7 +54,19 @@ MonoBehaviour:
   - {fileID: 983744104347121296}
   - {fileID: 983744106228723046}
   - {fileID: 983744104544680100}
-  MainObject: {fileID: 3549677858383147628}
+--- !u!65 &5697408920061812899
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101225288038369835}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16, y: 0.16, z: 0.16}
+  m_Center: {x: 0, y: 0.08, z: 0}
 --- !u!1001 &101225286391599159
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -190,11 +203,6 @@ GameObject:
 --- !u!4 &499097609893330377 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 753195f45bb649d4bbfc0c5e6ff7aff5, type: 3}
-  m_PrefabInstance: {fileID: 101225287090264610}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &3549677858383147628 stripped
-MeshFilter:
-  m_CorrespondingSourceObject: {fileID: -5754084199372789682, guid: 753195f45bb649d4bbfc0c5e6ff7aff5, type: 3}
   m_PrefabInstance: {fileID: 101225287090264610}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &101225287730301889
