@@ -33,7 +33,10 @@ public class EventsPlayer : MonoBehaviour
 
     public void OnPlayerDeath() {
         SetInputs(false);
-        //Start RagDole
+        //Fade out
+        EventsGame.Instance.CameraFade(false);
+        //
+        GameManager.Instance.NextLevel();
         //Increment death number UI
         //Call OnPlayerRespawn in X seconds (TimeManager)
     }

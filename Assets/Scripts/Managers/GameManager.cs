@@ -21,7 +21,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void Start() {
-        EventsPlayer.Instance.OnPlayerRespawn();
+        EventsPlayer.Instance.OnPlayerRespawn();    //TODO PLAY INTRO TIMELINE
     }
 
     public void RestartGame()
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentLevel          ++         ;
         OnNextLevel?.Invoke(CurrentLevel);
+        EventsPlayer.Instance.OnPlayerRespawn();
     }
 }
 
