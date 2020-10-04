@@ -31,4 +31,17 @@ public class EventsGame : MonoBehaviour
     public void EnableMainCamera(bool enabled) {
         mainCamera.gameObject.SetActive(enabled);
     }
+
+    public void CameraFade(bool isFadeIn) {
+        if (isFadeIn) {
+            GameVariables.Instance.CameraFadeOut.gameObject.SetActive(false);
+            GameVariables.Instance.CameraFadeIn.gameObject.SetActive(true);
+            GameVariables.Instance.CameraFadeIn.SetTrigger("FadeIn");
+        }
+        else {
+            GameVariables.Instance.CameraFadeIn.gameObject.SetActive(false);
+            GameVariables.Instance.CameraFadeOut.gameObject.SetActive(true);
+            GameVariables.Instance.CameraFadeOut.SetTrigger("FadeOut");
+        }
+    }
 }

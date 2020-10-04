@@ -1,4 +1,7 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
+
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
@@ -18,7 +21,11 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    
+
+    private void Start() {
+        EventsPlayer.Instance.OnPlayerRespawn();    //TODO PLAY INTRO TIMELINE
+    }
+
     public void RestartGame()
     {
         OnRestartGame?.Invoke();
@@ -34,9 +41,10 @@ public class GameManager : MonoBehaviour
     {
         CurrentLevel          ++         ;
         OnNextLevel?.Invoke(CurrentLevel);
+        EventsPlayer.Instance.OnPlayerRespawn();
     }
 }
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(GameManager))]
 public class GameManagerEditor : Editor
 {
@@ -58,3 +66,4 @@ public class GameManagerEditor : Editor
         GUILayout.EndVertical();
     }
 }
+#endif

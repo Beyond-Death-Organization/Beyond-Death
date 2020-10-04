@@ -1,6 +1,10 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
+--- !u!114 &-4019871629440794127
+=======
 --- !u!114 &-2564384606277188424
+>>>>>>> ed5d245318c1499ce0bb97e2c6e93df7e21a92df
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

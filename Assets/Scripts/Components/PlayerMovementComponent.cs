@@ -6,17 +6,21 @@ public class PlayerMovementComponent : MonoBehaviour
 {
     public bool EnableMovement = true;
     public float Speed;
-    private Rigidbody RigidBody;
+    private Rigidbody rigidBody;
+    private Animator animator;
     public float WorldRotation = -45;
 
     private Player player;
-    private int horizontalAxisId, verticalAxisId;    //TODO TO AVOID STRING COMPARISION
+    private int horizontalAxisId, verticalAxisId; //TODO TO AVOID STRING COMPARISION
 
     private Vector3 inputs = Vector3.zero;
+
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
-        RigidBody = GetComponent<Rigidbody>();
-        GameManager.Instance.OnNextLevel.AddListener(arg0 => transform.position = (GameVariables.References["StartPosition"]).transform.position);
+        rigidBody = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();
+        GameManager.Instance.OnNextLevel.AddListener(arg0 =>
+            transform.position = (GameVariables.References["StartPosition"]).transform.position);
     }
 
     private void FixedUpdate()
@@ -29,7 +33,7 @@ public class PlayerMovementComponent : MonoBehaviour
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
         
-        if ((inputs.x < 0.1f &&  inputs.z < 0.1f) && (inputs.x > -0.1f &&  inputs.z > -0.1f))
+        if (inputs.x < 0.1f &&  inputs.z < 0.1f && (inputs.x > -0.1f &&  inputs.z > -0.1f))
         {
             inputs = Vector3.zero;
             RigidBody.velocity = inputs;
@@ -37,8 +41,9 @@ public class PlayerMovementComponent : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.LookRotation(pos);
-            
-            RigidBody.MovePosition(RigidBody.position + pos * (Speed * Time.deltaTime));
+            RigidBody.MovePosition(RigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
+        
+        animator.SetFloat("Speed", rigidBody.velocity.magnitude);
     }
 }

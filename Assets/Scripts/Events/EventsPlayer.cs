@@ -28,13 +28,15 @@ public class EventsPlayer : MonoBehaviour
     /// Enable player inputs at the end of timeline
     /// </summary>
     public void OnPlayerRespawn() {
-        GameVariables.Instance.Timeline_BridgeFalling.time = GameVariables.Instance.Timeline_PlayerRespawnTime;
-        GameVariables.Instance.Timeline_BridgeFalling.Play();
+        GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
     }
 
     public void OnPlayerDeath() {
         SetInputs(false);
-        //Start RagDole
+        //Fade out
+        EventsGame.Instance.CameraFade(false);
+        //
+        GameManager.Instance.NextLevel();
         //Increment death number UI
         //Call OnPlayerRespawn in X seconds (TimeManager)
     }
@@ -56,5 +58,9 @@ public class EventsPlayer : MonoBehaviour
 
     public void ActivatePlayer(bool enabled) {
         GameVariables.Instance.Player.gameObject.SetActive(enabled);
+    }
+
+    public void ActivatePlayerAnimator(bool enabled) {
+        GameVariables.Instance.PlayerAnimtor.enabled = enabled;
     }
 }
