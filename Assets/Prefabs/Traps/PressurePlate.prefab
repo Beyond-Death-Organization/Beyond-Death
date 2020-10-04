@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4844761786851180937}
   - component: {fileID: 4844761786851180936}
   - component: {fileID: 4844761786851180934}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: PressurePlate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4844761787052446102}
   - component: {fileID: 4844761787052446103}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4844761787707830976}
   - component: {fileID: 4844761787707830977}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: AnimationReverse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 5186151100139030726}
   - component: {fileID: 6925445216373128204}
   - component: {fileID: 8871215828775116246}
-  m_Layer: 11
+  m_Layer: 13
   m_Name: Pressure_Plate
   m_TagString: Untagged
   m_Icon: {fileID: 0}

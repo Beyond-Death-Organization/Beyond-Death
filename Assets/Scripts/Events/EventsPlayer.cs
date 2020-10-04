@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Rewired;
 using UnityEngine;
 using UnityEngine.Events;
@@ -22,6 +23,10 @@ public class EventsPlayer : MonoBehaviour
 #endregion
 
     [HideInInspector] public UnityEvent OnToggleDeadBodies;
+
+    private void Start() {
+        GameManager.Instance.OnNextLevel.AddListener(i => { ToggleDeadBodies(); });
+    }
 
     /// <summary>
     /// Play end of timeline of bridge falling
