@@ -3,7 +3,12 @@ guid: 73f5ad0c938545c42a4312bd51f45870
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bloodmeter_material
+    second: {fileID: 2100000, guid: f7648266746c0534e971cf8bd2e7794c, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
