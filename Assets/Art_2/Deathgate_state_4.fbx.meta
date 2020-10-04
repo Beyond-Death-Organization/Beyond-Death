@@ -1,13 +1,14 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 50cb0253234e73b43b764bb9fbb7e310
-=======
-guid: 58c35c226a47b574dab714255af7aabe
->>>>>>> da20d1ef37fb717a08cee9b4e8cfc58d420b87af
+guid: 6fbec0c0c2dc9ff4aba53783ab22d7d3
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Deathgate_state_4_material
+    second: {fileID: 2100000, guid: 06aae7284f554584b894f6bd8de7f009, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
