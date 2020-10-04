@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1136565462587212360}
   - component: {fileID: 1136565462587212361}
+  - component: {fileID: 4158010652014800766}
   m_Layer: 0
   m_Name: Tile_full_grass
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136565462587212358}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.19133234, y: 0.019, z: -0.734}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 598799775184528006}
@@ -53,7 +54,19 @@ MonoBehaviour:
   - {fileID: 217454356717831039}
   - {fileID: 217454357006250290}
   - {fileID: 217454357375484522}
-  MainObject: {fileID: 4602826893899214115}
+--- !u!65 &4158010652014800766
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136565462587212358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.08, z: 0.5}
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1001 &1136565461895007331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -332,10 +345,5 @@ GameObject:
 --- !u!4 &598799775184528006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
-  m_PrefabInstance: {fileID: 1136565463531668845}
-  m_PrefabAsset: {fileID: 0}
---- !u!33 &4602826893899214115 stripped
-MeshFilter:
-  m_CorrespondingSourceObject: {fileID: -5754084199372789682, guid: dfd993b8c8c7ea34c8c341dd5fd9a1a2, type: 3}
   m_PrefabInstance: {fileID: 1136565463531668845}
   m_PrefabAsset: {fileID: 0}
