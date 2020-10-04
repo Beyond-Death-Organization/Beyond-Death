@@ -36,12 +36,12 @@ public class PlayerMovementComponent : MonoBehaviour
         if (inputs.x < 0.1f &&  inputs.z < 0.1f && (inputs.x > -0.1f &&  inputs.z > -0.1f))
         {
             inputs = Vector3.zero;
-            RigidBody.velocity = inputs;
+            rigidBody.velocity = inputs;
         }
         else
         {
             transform.rotation = Quaternion.LookRotation(pos);
-            RigidBody.MovePosition(RigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
+            rigidBody.MovePosition(rigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
         
         animator.SetFloat("Speed", rigidBody.velocity.magnitude);
