@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7944837291292263242}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Holes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 1644940502833431450}
   - component: {fileID: 2412763064488496191}
   - component: {fileID: 477148947758315765}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: spikes (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 3874818418378657229}
   - component: {fileID: 173886969944130152}
   - component: {fileID: 2705873990194706082}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 7842625259739651612}
   - component: {fileID: 806888605937986288}
   - component: {fileID: 8451322345229494618}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: Spikes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -275,7 +275,7 @@ GameObject:
   - component: {fileID: 7431910512608139073}
   - component: {fileID: 5804199465664436452}
   - component: {fileID: 8604232506291530798}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: spikes (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 9030865958751864931}
   - component: {fileID: 5403139951545911238}
   - component: {fileID: 7863065464774947596}
-  m_Layer: 11
+  m_Layer: 14
   m_Name: spikes (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -437,7 +437,8 @@ GameObject:
   - component: {fileID: 8565228866008788302}
   - component: {fileID: 8205317621289133029}
   - component: {fileID: 9012374175461531661}
-  m_Layer: 11
+  - component: {fileID: 798840362}
+  m_Layer: 13
   m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationSpeed: 1
   AnimationTimeline: {fileID: 9012374175461531661}
-  SpikeDelay: 1
+  SpikeDelay: 3
 --- !u!320 &9012374175461531661
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -496,6 +497,19 @@ PlayableDirector:
     value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
+--- !u!65 &798840362
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049454489216514036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.22026134, y: 0.06204644, z: 0.23272514}
+  m_Center: {x: 0.0007536411, y: 0.06208919, z: -0.007129669}
 --- !u!1001 &7368186488337525277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -562,6 +576,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
       propertyPath: m_Name
       value: spike_holes (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
@@ -637,6 +655,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spike_holes (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
 --- !u!4 &7046928282546339230 stripped
@@ -711,6 +733,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: spike_holes
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
+      propertyPath: m_Layer
+      value: 14
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
 --- !u!4 &7046928282030597851 stripped
@@ -784,6 +810,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
       propertyPath: m_Name
       value: spike_holes (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}
+      propertyPath: m_Layer
+      value: 14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b68d7b62c4a554bb83e0204f7e5d5a, type: 3}

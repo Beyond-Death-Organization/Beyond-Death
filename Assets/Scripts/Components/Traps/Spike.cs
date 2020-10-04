@@ -2,44 +2,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Spike : TrapComponent
 {
-    public float SpikeDelay;
+    public float SpikeDelay = 1;
 
     private bool enabled;
 
-    private double lastOutputTime;
-    private float timer = 0;
+    private double nextOutputTime;
+    private double timer = 0;
 
     private void Start() {
+        nextOutputTime = Random.Range(5f, 10f);
         AnimationTimeline.stopped += director => {
             enabled = false;
-            lastOutputTime = Time.time;
         };
     }
 
     private void Update() {
+        if (enabled)
+            return; 
+        
         timer += Time.deltaTime;
         
-        if (lastOutputTime + timer >= SpikeDelay) {
+        if (timer >= nextOutputTime) {
             enabled = true;
-            timer = 0;
+            nextOutputTime += SpikeDelay;
 
             AnimationTimeline.Play();
         }
     }
+    
 
-    private void OnCollisionStay(Collision other) {
+    private void OnTriggerStay(Collider other) {
         if (!enabled)
             return;
         
         //Make sure its player
-        if (!other.gameObject.TryGetComponent(out PlayerMovementComponent player))
+        if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
 
-#if UNITY_EDITOR
-        Debug.Log("Killed played");
-#endif
+        EventsPlayer.Instance.OnPlayerDeath();
     }
 }
