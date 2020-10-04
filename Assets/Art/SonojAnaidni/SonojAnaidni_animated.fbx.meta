@@ -6,7 +6,12 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CHR_SonojAnaidni_rig_SonojAnaidni_SonojAnaidni_Material
+    second: {fileID: 2100000, guid: 274d885deac565945b80457321028fab, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
