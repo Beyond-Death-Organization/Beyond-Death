@@ -25,6 +25,8 @@ public class EventsPlayer : MonoBehaviour
     [HideInInspector] public UnityEvent OnToggleDeadBodies;
     public CharacterController cc;
 
+    private int amountTotemPicked = 0;
+
     private void Start() {
         GameManager.Instance.OnNextLevel.AddListener(i => { ToggleDeadBodies(); });
     }
@@ -48,8 +50,7 @@ public class EventsPlayer : MonoBehaviour
         //Call OnPlayerRespawn in X seconds (TimeManager)
     }
 
-    public void SetInputs(bool enable)
-    {
+    public void SetInputs(bool enable) {
         cc.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Keyboard.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Mouse.enabled = enable;
@@ -71,5 +72,26 @@ public class EventsPlayer : MonoBehaviour
 
     public void ActivatePlayerAnimator(bool enabled) {
         GameVariables.Instance.PlayerAnimtor.enabled = enabled;
+    }
+
+    public void OnTotemPickup() {
+        switch (amountTotemPicked) {
+            case 0:
+                GameVariables.Instance.Totem_Track01.Play();
+                break;
+            case 1:
+                GameVariables.Instance.Totem_Track02.Play();
+                break;
+            case 2:
+                GameVariables.Instance.Totem_Track03.Play();
+                break;
+        }
+
+        amountTotemPicked++;
+    }
+
+    public void OnPlayerEnteredGate() {
+        //TODO TIMELINE PLAYER EXIT LEVEL
+        //TODO DISPLAY THX FOR PLAYING
     }
 }

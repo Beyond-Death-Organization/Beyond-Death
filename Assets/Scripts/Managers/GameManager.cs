@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent OnRestart = new UnityEvent();
     public UnityEvent<int> OnNextLevel = new UnityEvent<int>();
     public int CurrentLevel;
+    public float localY;
+    public float OffsetlocalY;
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -37,9 +39,9 @@ public class GameManager : MonoBehaviour
         OnRestart?.Invoke();
     }
 
-    public void NextLevel()
+    public void NextLevel(int level = 1)
     {
-        CurrentLevel          ++         ;
+        CurrentLevel += level;
         OnNextLevel?.Invoke(CurrentLevel);
         EventsPlayer.Instance.OnPlayerRespawn();
     }
