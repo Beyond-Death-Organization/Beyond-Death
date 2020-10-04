@@ -3,7 +3,12 @@ guid: a89c9e2c1c3f5e846bcb6e51fa1fa994
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tree_stump_state_3_material
+    second: {fileID: 2100000, guid: 9deeb7e9f371dc44cad7454ddddbd7f1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
