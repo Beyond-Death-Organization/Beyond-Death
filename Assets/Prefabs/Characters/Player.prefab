@@ -1512,8 +1512,8 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  FadeInDelay: 0.8
-  FadeOutDelay: 0.5
+  FadeInDelay: 0.6
+  FadeOutDelay: 0.2
 --- !u!114 &7936858275896759433
 MonoBehaviour:
   m_ObjectHideFlags: 0

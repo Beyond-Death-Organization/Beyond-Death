@@ -15,7 +15,20 @@ namespace Managers
             {
                 Destroy(gameObject);
             }
-            //DontDestroyOnLoad (gameObject);
         }
+        public void Play(AudioClip clip, AudioSource EffectsSource)
+        {
+            EffectsSource.clip = clip;
+            EffectsSource.Play();
+        }
+
+        // Play a single clip through the music source.
+        public void PlayMusic(AudioClip clip, AudioSource MusicSource)
+        {
+            MusicSource.clip = clip;
+            MusicSource.loop = true;
+            MusicSource.Play();
+        }
+
     }
 }
