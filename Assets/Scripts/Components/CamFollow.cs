@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
 #if UNITY_EDITOR
@@ -12,6 +13,7 @@ public class CamFollow : MonoBehaviour
 
     public float smoothSpeed = 0.125f;
 
+    
     public bool EditorFollow;
     [Conditional("UNITY_EDITOR")]
     private void Update()
