@@ -3,7 +3,12 @@ guid: 3e86939049b833e42a937af5775c5dec
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skeleton_piece_01_material
+    second: {fileID: 2100000, guid: 2688ca73d59357d4e955e2690e63c38b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
