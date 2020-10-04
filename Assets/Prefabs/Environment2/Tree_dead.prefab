@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7809917084315335655}
   - component: {fileID: 7809917084315335654}
+  - component: {fileID: 2813005504474079901}
   m_Layer: 0
   m_Name: Tree_dead
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7809917084315335653}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 7775710259541967028}
   - {fileID: 7775710260241739704}
@@ -53,6 +54,19 @@ MonoBehaviour:
   - {fileID: 6963426922258887938}
   - {fileID: 6963426921343128253}
   - {fileID: 6963426921506475231}
+--- !u!65 &2813005504474079901
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7809917084315335653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07, y: 0.93, z: 0.07}
+  m_Center: {x: 0, y: 0.465, z: 0.02}
 --- !u!1001 &7809917084798601299
 PrefabInstance:
   m_ObjectHideFlags: 0
