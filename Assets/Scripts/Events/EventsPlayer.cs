@@ -23,11 +23,18 @@ public class EventsPlayer : MonoBehaviour
 #endregion
 
     [HideInInspector] public UnityEvent OnToggleDeadBodies;
-    public CharacterController cc;
+
+    //Player info (hardcode but fk it)
+    private Vector3 playerSpawnPosition;
+    private Quaternion playerSpawnRotation;
+    private CharacterController playerCC;
 
     private int amountTotemPicked = 0;
 
     private void Start() {
+        playerCC = GameVariables.Instance.Player.GetComponent<CharacterController>();
+        playerSpawnPosition = GameVariables.Instance.Player.transform.position;
+        playerSpawnRotation = GameVariables.Instance.Player.transform.rotation;
         GameManager.Instance.OnNextLevel.AddListener(i => { ToggleDeadBodies(); });
     }
 
@@ -51,7 +58,7 @@ public class EventsPlayer : MonoBehaviour
     }
 
     public void SetInputs(bool enable) {
-        cc.enabled = enable;
+        playerCC.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Keyboard.enabled = enable;
         ReInput.players.GetPlayer("Player01").controllers.Mouse.enabled = enable;
         foreach (Joystick joystick in ReInput.players.GetPlayer("Player01").controllers.Joysticks) {
@@ -64,6 +71,11 @@ public class EventsPlayer : MonoBehaviour
     /// </summary>
     public void ToggleDeadBodies() {
         OnToggleDeadBodies?.Invoke();
+    }
+
+    public void ReturnToSpawn() {
+        GameVariables.Instance.Player.transform.position = playerSpawnPosition;
+        GameVariables.Instance.Player.transform.rotation = playerSpawnRotation;
     }
 
     public void ActivatePlayer(bool enabled) {
