@@ -4,45 +4,50 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Spike : TrapComponent
+public class Darts : TrapComponent
 {
-    public float SpikeDelay = 1;
+    public float ShootDelay = 2;
 
-    private bool spikeEnabled;
+    private bool dartEnabled;
 
     private double nextOutputTime;
     private double timer = 0;
-
+    
     private void Start() {
-        nextOutputTime = Random.Range(3f, 7f);
+        nextOutputTime = Random.Range(3f, 6f);
         AnimationTimeline.stopped += director => {
-            spikeEnabled = false;
+            dartEnabled = false;
         };
     }
-
+    
     private void Update() {
-        if (spikeEnabled)
+        if (dartEnabled)
             return; 
-        
+
         timer += Time.deltaTime;
         
         if (timer >= nextOutputTime) {
-            spikeEnabled = true;
-            nextOutputTime += SpikeDelay;
+            dartEnabled = true;
+            nextOutputTime += ShootDelay;
 
             AnimationTimeline.Play();
         }
     }
-    
 
     private void OnTriggerStay(Collider other) {
-        if (!spikeEnabled)
-            return;
-        
-        //Make sure its player
+#if UNITY_EDITOR
+        Debug.Log("nonono");
+#endif
+    }
+
+    private void OnTriggerEnter(Collider other) {
+
+#if UNITY_EDITOR
+        Debug.Log("wtfff");
+#endif
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
-
+        
         EventsPlayer.Instance.OnPlayerDeath();
     }
 }
