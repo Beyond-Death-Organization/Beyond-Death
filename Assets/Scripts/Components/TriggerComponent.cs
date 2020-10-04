@@ -9,7 +9,7 @@ public class TriggerComponent : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         onTriggerEnter?.Invoke();
-        PlayerManager.Instance.Killplayer();
+        EventsPlayer.Instance.OnPlayerDeath();
         GetComponent<Collider>().isTrigger = false;
     }
 

@@ -11,6 +11,8 @@ public class PlayerMovementComponent : MonoBehaviour
     public float WorldRotation = -45;
 
     private Player player;
+    private Vector3 spawnPosition;
+    private Quaternion spawnRotation;
     private int horizontalAxisId, verticalAxisId; //TODO TO AVOID STRING COMPARISION
 
     private Vector3 inputs = Vector3.zero;
@@ -19,8 +21,13 @@ public class PlayerMovementComponent : MonoBehaviour
         player = ReInput.players.GetPlayer("Player01");
         rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-        GameManager.Instance.OnNextLevel.AddListener(arg0 =>
-            transform.position = (GameVariables.References["StartPosition"]).transform.position);
+        spawnPosition = transform.position;
+        spawnRotation = transform.rotation;
+        
+        GameManager.Instance.OnNextLevel.AddListener(arg0 => {
+            transform.position = spawnPosition;
+            transform.rotation = spawnRotation;
+        });
     }
 
     private void FixedUpdate()
@@ -44,6 +51,6 @@ public class PlayerMovementComponent : MonoBehaviour
             rigidBody.MovePosition(rigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
         
-        animator.SetFloat("Speed", rigidBody.velocity.magnitude);
+        animator.SetFloat("Speed", Mathf.Clamp01(inputs.magnitude));
     }
 }
