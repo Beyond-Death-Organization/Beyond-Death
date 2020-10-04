@@ -11,8 +11,7 @@ public class LodObject : MonoBehaviour
 {
     // Start is called before the first frame update
     public BaseOn Baseon;
-    public List<MeshFilter> State;
-    public MeshFilter MainObject;
+    public List<GameObject> State;
     private int contaminationLevel = 0;
     void Start()
     {
@@ -31,12 +30,29 @@ public class LodObject : MonoBehaviour
         {
             case BaseOn.Level:
                 if(contaminationLevel < State.Count)
-                    MainObject.mesh = State[contaminationLevel].sharedMesh;
+                    ShowGoodElement(contaminationLevel);
                 break;
             case BaseOn.DeathCount:
                 if(level - 1 < State.Count)
-                    MainObject.mesh = State[level - 1].sharedMesh;
+                    ShowGoodElement(level - 1);
                 break;
+        }
+    }
+
+    public void ShowGoodElement(int numberToShow)
+    {
+        int compteur = 0;
+        foreach (var mesh in State)
+        {
+            if (compteur == numberToShow)
+            {
+                mesh.SetActive(true);
+            }
+            else
+            {
+                mesh.SetActive(false);
+            }
+            compteur++;
         }
     }
 }
