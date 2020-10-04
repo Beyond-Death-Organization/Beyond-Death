@@ -39,11 +39,8 @@ public class PlayerMovementComponent : MonoBehaviour
         isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
 
         if (isGrounded && velocity.y < 0)
-        {
             velocity.y = -2f;
-        }
-        inputs.x = player.GetAxis("Horizontal");
-        inputs.z = player.GetAxis("Vertical");
+        
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
         
@@ -53,8 +50,12 @@ public class PlayerMovementComponent : MonoBehaviour
 
         if (!(inputs.sqrMagnitude < 0.01f))
             transform.rotation = Quaternion.LookRotation(pos);
+    }
 
-        animator.SetFloat("Speed", Mathf.Clamp01(inputs.magnitude));
-
+    private void Update()
+    {
+        inputs.x = player.GetAxis("Horizontal");
+        inputs.z = player.GetAxis("Vertical");
+        animator.SetFloat("Speed", inputs.magnitude);
     }
 }
