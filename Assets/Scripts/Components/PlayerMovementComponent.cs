@@ -29,7 +29,7 @@ public class PlayerMovementComponent : MonoBehaviour
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
         
-        if ((inputs.x < 0.1f &&  inputs.z < 0.1f) && (inputs.x > -0.1f &&  inputs.z > -0.1f))
+        if (inputs.x < 0.1f &&  inputs.z < 0.1f && (inputs.x > -0.1f &&  inputs.z > -0.1f))
         {
             inputs = Vector3.zero;
             RigidBody.velocity = inputs;
@@ -37,8 +37,7 @@ public class PlayerMovementComponent : MonoBehaviour
         else
         {
             transform.rotation = Quaternion.LookRotation(pos);
-            
-            RigidBody.MovePosition(RigidBody.position + pos * (Speed * Time.deltaTime));
+            RigidBody.MovePosition(RigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
         }
     }
 }
