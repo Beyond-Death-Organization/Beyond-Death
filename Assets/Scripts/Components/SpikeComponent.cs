@@ -4,9 +4,10 @@ using UnityEngine;
 
 namespace Components
 {
-    public class Spike : InteractableObject
+    public class SpikeComponent : InteractableObject
     {
         public Rigidbody Spikes;
+        public float EndFrame = 1;
         public float WaitTime;
         public AnimationCurve SpikeCurve;
         public float Duration;
@@ -58,7 +59,7 @@ namespace Components
             if (hasHit)
             {
                 var spikePosition = initialPosition;
-                spikePosition.y = initialPosition.y + 1 * Height;
+                spikePosition.y = initialPosition.y + SpikeCurve.Evaluate(EndFrame) * Height;
                 Spikes.MovePosition(spikePosition);
             }
 
