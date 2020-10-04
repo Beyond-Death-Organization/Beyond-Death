@@ -17,13 +17,17 @@ public class PlayerMovementComponent : MonoBehaviour
 
     private Vector3 inputs = Vector3.zero;
 
+    public Transform GroundCheck;
+    public float GroundDistance = 0f;
+    public LayerMask GroundMask;
+    public CharacterController Controller;
+    private Vector3 velocity;
+    private bool isGrounded;
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
-        rigidBody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
         spawnPosition = transform.position;
         spawnRotation = transform.rotation;
-        
         GameManager.Instance.OnNextLevel.AddListener(arg0 => {
             transform.position = spawnPosition;
             transform.rotation = spawnRotation;
@@ -32,25 +36,25 @@ public class PlayerMovementComponent : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!EnableMovement) { return; }
-        
+        isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
-        
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
         
-        if (inputs.x < 0.1f &&  inputs.z < 0.1f && (inputs.x > -0.1f &&  inputs.z > -0.1f))
-        {
-            inputs = Vector3.zero;
-            rigidBody.velocity = inputs;
-        }
-        else
-        {
+        velocity.y += -9.81f * Time.deltaTime;
+        Controller.Move(pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
+        Controller.Move(velocity * Time.deltaTime);
+
+        if (!(inputs.sqrMagnitude < 0.01f))
             transform.rotation = Quaternion.LookRotation(pos);
-            rigidBody.MovePosition(rigidBody.position + pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.deltaTime)));
-        }
-        
+
         animator.SetFloat("Speed", Mathf.Clamp01(inputs.magnitude));
+
     }
 }
