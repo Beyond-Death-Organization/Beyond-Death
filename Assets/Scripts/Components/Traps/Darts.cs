@@ -6,21 +6,21 @@ using Random = UnityEngine.Random;
 
 public class Darts : TrapComponent
 {
-    public float ShootDelay = 2;
-
-    private bool dartEnabled;
-
-    private double nextOutputTime;
-    private double timer = 0;
+    //public float ShootDelay = 2;
+    public GameObject DeadBody;
     
+    private bool dartEnabled = true;
+
+    //private double nextOutputTime;
+    //private double timer = 0;
+
     private void Start() {
-        nextOutputTime = Random.Range(3f, 6f);
-        AnimationTimeline.stopped += director => {
-            dartEnabled = false;
-        };
+        //nextOutputTime = Random.Range(3f, 6f);
+        //AnimationTimeline.stopped += director => { dartEnabled = false; };
+        GameVariables.Instance.Timeline_PlayerDarted.stopped += director => { DeadBody.SetActive(true); };
     }
-    
-    private void Update() {
+
+    /*private void Update() {
         if (dartEnabled)
             return; 
 
@@ -32,22 +32,18 @@ public class Darts : TrapComponent
 
             AnimationTimeline.Play();
         }
-    }
-
-    private void OnTriggerStay(Collider other) {
-#if UNITY_EDITOR
-        Debug.Log("nonono");
-#endif
-    }
+    }*/
 
     private void OnTriggerEnter(Collider other) {
+        if (!dartEnabled)
+            return;
 
-#if UNITY_EDITOR
-        Debug.Log("wtfff");
-#endif
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
-        
-        EventsPlayer.Instance.OnPlayerDeath();
+
+        dartEnabled = false;
+
+        GameVariables.Instance.LastTrapActivatedByPlayer = this;
+        GameVariables.Instance.Timeline_PlayerDarted.Play();
     }
 }
