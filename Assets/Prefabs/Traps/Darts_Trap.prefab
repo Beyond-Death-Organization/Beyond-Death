@@ -171,9 +171,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 127841652051518057}
-  - component: {fileID: 7993190608728770453}
   - component: {fileID: 723253920522989354}
-  - component: {fileID: 806427791297944239}
   m_Layer: 13
   m_Name: Darts_Trap
   m_TagString: Untagged
@@ -198,21 +196,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &7993190608728770453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760545261322238163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2f2c03912995e7458f9ceb3bc21308a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnimationSpeed: 1
-  AnimationTimeline: {fileID: 723253920522989354}
-  DeadBody: {fileID: 2858403738316276358}
 --- !u!320 &723253920522989354
 PlayableDirector:
   m_ObjectHideFlags: 0
@@ -236,19 +219,6 @@ PlayableDirector:
     value: {fileID: 167409366626870909}
   m_ExposedReferences:
     m_References: []
---- !u!65 &806427791297944239
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 760545261322238163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3395572, y: 0.47849518, z: 0.012715088}
-  m_Center: {x: -0.006641209, y: 0.26075247, z: 0.002245064}
 --- !u!1 &941624996068543347
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,13 +342,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473758109737960826}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2f2c03912995e7458f9ceb3bc21308a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationSpeed: 1
   AnimationTimeline: {fileID: 723253920522989354}
+  ShootDelay: 2
   DeadBody: {fileID: 2858403738316276358}
 --- !u!65 &8946758974705362391
 BoxCollider:
@@ -389,7 +360,7 @@ BoxCollider:
   m_GameObject: {fileID: 1473758109737960826}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.22026134, y: 0.02752005, z: 0.12896015}
   m_Center: {x: 0.0007536411, y: -0.008180022, z: -0.0035962537}
