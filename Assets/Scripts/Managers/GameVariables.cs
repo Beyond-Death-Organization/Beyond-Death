@@ -31,11 +31,13 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
         Timeline_PlayerDrown,
         Timeline_PlayerSpiked,
         Timeline_PlayerDarted,
-        Timeline_PlayerKilled;
+        Timeline_PlayerKilled,
+        Timeline_PlayerTeleport;
 
     [Header("UI")] public Animator CameraFadeAnimator;
 
     [HideInInspector] public TrapComponent LastTrapActivatedByPlayer;
+    [HideInInspector] public TeleportComponent LastTeleportUsed;
 
     [Header("Wrapper")] public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
     public static Dictionary<string, GameObject> References = new Dictionary<string, GameObject>();
