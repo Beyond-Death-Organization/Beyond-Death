@@ -2809,6 +2809,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4809944505522646357, guid: da88e0533b60dc24dbab103be91be8f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.027
+      objectReference: {fileID: 0}
+    - target: {fileID: 4809944506051772255, guid: da88e0533b60dc24dbab103be91be8f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.111
+      objectReference: {fileID: 0}
     - target: {fileID: 4892202317563149907, guid: da88e0533b60dc24dbab103be91be8f4, type: 3}
       propertyPath: m_Name
       value: NextToSpawnLand
