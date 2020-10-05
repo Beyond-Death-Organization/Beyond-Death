@@ -7,6 +7,7 @@ namespace Components
     public class SpikeComponent : InteractableObject
     {
         public Rigidbody Spikes;
+        public GameObject DeadBody;
         public float EndFrame = 1;
         public float WaitTime;
         public AnimationCurve SpikeCurve;
@@ -18,7 +19,7 @@ namespace Components
         public Collider coll;
         public GameObject toEnable;
         public bool loop;
-        public TriggerComponent TriggerComponent;
+        public SpikeCollider SpikeCollider;
         private bool hasHit;
         private void Awake()
         {
@@ -28,7 +29,7 @@ namespace Components
                 TimedActionManager.Instance.AddTimedAction(Execute, WaitTime);
                 hasEnter = true;
             }
-            TriggerComponent.onTriggerEnter.AddListener(() => hasHit = true);
+            SpikeCollider.onTriggerEnter.AddListener(() => hasHit = true);
         }
 
         public override void OnEnter(Collider other)
@@ -79,6 +80,11 @@ namespace Components
         {
             StartCoroutine(Boom());
             hasEnter = true;
+        }
+
+        public void SpawnDead(Collider hit)
+        {
+            DeadBody.SetActive(true);
         }
 
         private void OnDrawGizmos()

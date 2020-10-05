@@ -48405,6 +48405,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike Loop
       objectReference: {fileID: 0}
+    - target: {fileID: 4920885344098698849, guid: 9af6163daec723540a57eafff7e79133, type: 3}
+      propertyPath: EndFrame
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9af6163daec723540a57eafff7e79133, type: 3}
 --- !u!1001 &1817420180
