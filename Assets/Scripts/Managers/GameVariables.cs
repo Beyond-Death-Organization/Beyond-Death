@@ -29,11 +29,14 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
     public PlayableDirector Timeline_PlayerDrown;
     public PlayableDirector Timeline_PlayerPickupTotem;
     public PlayableDirector Timeline_Totem_Track01, Timeline_Totem_Track02, Timeline_Totem_Track03;
+    public PlayableDirector Timeline_PlayerSpiked, Timeline_PlayerDarted;
 
     [Header("UI")] 
     public Animator CameraFadeIn;
     public Animator CameraFadeOut;
-    
+
+    [HideInInspector] public TrapComponent LastTrapActivatedByPlayer;
+
     [Header("Wrapper")]
     public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
     public static Dictionary<string, GameObject> References = new Dictionary<string, GameObject>();
