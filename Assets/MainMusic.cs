@@ -22,14 +22,11 @@ public class MainMusic : MonoBehaviour
             case 0:
                 AudioManager.Instance.PlayMusic("MusicA",GetComponent<AudioSource>());
                 break;
-            case 3:
+            case 4:
                 AudioManager.Instance.PlayMusic("MusicB",GetComponent<AudioSource>());
                 break;
-            case 6:
+            case 8:
                 AudioManager.Instance.PlayMusic("MusicC",GetComponent<AudioSource>());
-                break;
-            case 9:
-                AudioManager.Instance.PlayMusic("MusicD",GetComponent<AudioSource>());
                 break;
         }
     }

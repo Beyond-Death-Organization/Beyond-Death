@@ -15,11 +15,21 @@ namespace Components
             body = GetComponent<Rigidbody>();
         }
 
-        private void FixedUpdate()
+       /* private void FixedUpdate()
         {
             var position = transform.position;
             //wateposition.y = y;
             body.MovePosition(position);
+        }*/
+        void OnCollisionEnter(Collision c)
+        {
+            float force = 3;
+            if (c.gameObject.layer == LayerMask.NameToLayer("Player"))
+            {
+                Vector3 dir = c.contacts[0].point - transform.position;
+                dir = dir.normalized;
+                body.AddForce(dir*force);
+            }
         }
     }
 }
