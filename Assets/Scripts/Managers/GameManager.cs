@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentLevel += level;
         OnNextLevel?.Invoke(CurrentLevel);
-        GameVariables.Instance.LastPressurePlateComponent.OnPlayerDeath();
+        GameVariables.Instance.LastPressurePlateComponent?.OnPlayerDeath();
         EventsPlayer.Instance.OnPlayerRespawn();
     }
 }
