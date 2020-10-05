@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using Rewired;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -10,11 +12,22 @@ public class PlayButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     public AudioClip HoverClip;
     private AudioSource source;
     public Image image;
+    private Player player;
+    private bool clicked;
     private void Awake()
     {
+        player = ReInput.players.GetPlayer("Player01");
         source = gameObject.AddComponent<AudioSource>();
         source.clip = HoverClip;
         source.playOnAwake = false;
+    }
+
+    private void Update()
+    {
+        if (player.GetButton("Interact"))
+        {
+            Click();
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -30,7 +43,11 @@ public class PlayButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
 
     public void Click()
     {
-        StartCoroutine(OnClickRoutine());
+        if (!clicked)
+        {
+            image.gameObject.SetActive(true);
+            StartCoroutine(OnClickRoutine());
+        }
     }
 
     IEnumerator OnClickRoutine()
@@ -44,7 +61,8 @@ public class PlayButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
         {
             float currentProgress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
 
-            image.fillAmount = currentProgress;
+            if(currentProgress > image.fillAmount)
+                image.fillAmount = currentProgress;
             
             // Check if the load has finished
             if (asyncOperation.progress >= 0.9f)
