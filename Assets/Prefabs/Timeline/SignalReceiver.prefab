@@ -366,6 +366,7 @@ MonoBehaviour:
   OnToggleDeadBodies:
     m_PersistentCalls:
       m_Calls: []
+  cheapFixeAudio: {fileID: 0}
 --- !u!114 &1229657115015383385
 MonoBehaviour:
   m_ObjectHideFlags: 0
