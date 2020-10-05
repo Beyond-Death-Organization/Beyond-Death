@@ -36,6 +36,7 @@ public class EventsPlayer : MonoBehaviour
         playerSpawnPosition = GameVariables.Instance.Player.transform.position;
         playerSpawnRotation = GameVariables.Instance.Player.transform.rotation;
         GameManager.Instance.OnNextLevel.AddListener(i => { ToggleDeadBodies(); });
+        GameVariables.Instance.Timeline_PlayerPickupTotem.stopped += director => { EventsGame.Instance.PlayDoorTotemTimeline(amountTotemPicked); };
     }
 
 
@@ -86,25 +87,9 @@ public class EventsPlayer : MonoBehaviour
         GameVariables.Instance.PlayerAnimtor.enabled = enabled;
     }
 
-    private void Update() {
-        if(Input.GetKeyDown(KeyCode.P))
-            OnTotemPickup();
-    }
-
     public void OnTotemPickup() {
-        switch (amountTotemPicked) {
-            case 0:
-                GameVariables.Instance.Totem_Track01.Play();
-                break;
-            case 1:
-                GameVariables.Instance.Totem_Track02.Play();
-                break;
-            case 2:
-                GameVariables.Instance.Totem_Track03.Play();
-                break;
-        }
-
         amountTotemPicked++;
+        GameVariables.Instance.Timeline_PlayerPickupTotem.Play();
     }
 
     public void OnPlayerEnteredGate() {
