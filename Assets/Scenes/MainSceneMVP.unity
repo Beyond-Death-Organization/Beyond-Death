@@ -12760,6 +12760,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 1432132626704538688, guid: 58378a58f86e0a341af3146b0d5ac1d7, type: 3}
   m_PrefabInstance: {fileID: 1432132625959951378}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1564022665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8894591218612283714, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+  m_PrefabInstance: {fileID: 8590018702746697863}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e935b4b8cf0a1e4fb37ee8950ff14aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1572023821
 GameObject:
   m_ObjectHideFlags: 0
@@ -19157,8 +19168,52 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1896251875}
     - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: OnPlateActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1896251875}
+      objectReference: {fileID: 1564022665}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateActivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FlameTrap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateActivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateActivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1564022665}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FlameTrap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StopVFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 9038928397204668751, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: OnPlateDeactivated.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}

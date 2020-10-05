@@ -24,9 +24,9 @@ public class PressurePlateComponent : MonoBehaviour
         set {
             amountObjectsOnPressurePlate = value;
             if (value == 0)
-                OnDeactivation();
+                OnDeactivation?.Invoke();
             else if (value == 1)
-                OnActivation();
+                OnActivation?.Invoke();
         }
     }
 

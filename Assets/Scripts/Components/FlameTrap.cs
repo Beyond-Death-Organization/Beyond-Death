@@ -8,13 +8,18 @@ public class FlameTrap : PressurePlateComponent
     public Collider Hitbox;
 
     public override void Awake() {
-        OnActivation += () => {
-            Fire.Play();
-            Hitbox.enabled = true;
-        };
-        OnDeactivation += () => {
-            Fire.Stop();
-            Hitbox.enabled = false;
-        };
+        OnActivation += PlayVFX;
+
+        OnDeactivation += StopVFX;
+    }
+
+    public void PlayVFX() {
+        Fire.Play();
+        Hitbox.enabled = true;
+    }
+
+    public void StopVFX() {
+        Fire.Stop();
+        Hitbox.enabled = false;
     }
 }
