@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
         if(CurrentLevel == 12)
             RestartGame();
         OnNextLevel?.Invoke(CurrentLevel);
+        GameVariables.Instance.LastPressurePlateComponent?.OnPlayerDeath();
         EventsPlayer.Instance.OnPlayerRespawn();
     }
 }
