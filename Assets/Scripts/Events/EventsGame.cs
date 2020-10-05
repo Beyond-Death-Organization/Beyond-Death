@@ -69,6 +69,6 @@ public class EventsGame : MonoBehaviour
     }
 
     public void StartMusic() {
-        Managers.AudioManager.Instance.PlayMusic("MusicA",GetComponent<AudioSource>());
+        Managers.AudioManager.Instance.PlayMusic("MusicA",Camera.main.GetComponent<AudioSource>());
     }
 }
