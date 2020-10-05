@@ -60,6 +60,11 @@ public class EventsGame : MonoBehaviour
     }
 
     public void PlayTimelineActivatedTrapByPlayer() {
-        GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
+        if (GameVariables.Instance.LastTrapActivatedByPlayer != null) {
+            GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
+            return;
+        }
+        
+        EventsPlayer.Instance.OnPlayerRespawn();
     }
 }

@@ -21,6 +21,7 @@ public class PlayerMovementComponent : MonoBehaviour
     public CharacterController Controller;
     private Vector3 velocity;
     private bool isGrounded;
+
     private void Start() {
         player = ReInput.players.GetPlayer("Player01");
         animator = GetComponent<Animator>();
@@ -28,26 +29,26 @@ public class PlayerMovementComponent : MonoBehaviour
         spawnRotation = transform.rotation;
     }
 
-    private void FixedUpdate()
-    {
+    private void FixedUpdate() {
         isGrounded = Physics.CheckSphere(GroundCheck.position, GroundDistance, GroundMask);
 
         if (isGrounded && velocity.y < 0)
             velocity.y = -2f;
-        
+
         Vector3 pos = new Vector3(inputs.x, 0, inputs.z);
         pos = Quaternion.AngleAxis(WorldRotation, Vector3.up) * pos;
-        
+
         velocity.y += -9.81f * Time.fixedDeltaTime;
-        Controller.Move(pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.fixedDeltaTime)));
-        Controller.Move(velocity * Time.fixedDeltaTime);
+        if (Controller.enabled) {
+            Controller.Move(pos.normalized * (Mathf.Clamp01(pos.magnitude) * (Speed * Time.fixedDeltaTime)));
+            Controller.Move(velocity * Time.fixedDeltaTime);
+        }
 
         if (!(inputs.sqrMagnitude < 0.01f))
             transform.rotation = Quaternion.LookRotation(pos);
     }
 
-    private void Update()
-    {
+    private void Update() {
         inputs.x = player.GetAxis("Horizontal");
         inputs.z = player.GetAxis("Vertical");
         animator.SetFloat("Speed", inputs.magnitude);
