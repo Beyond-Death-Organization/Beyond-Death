@@ -62,6 +62,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 87ff287af8ee2d14089a78af0a43ab19, type: 2}
     - {fileID: 11400000, guid: 72b62af2691f4c64f8f0827cdf61bf2a, type: 2}
     - {fileID: 11400000, guid: f84af9de6e2c16844a38a0e3a9c5ef34, type: 2}
+    - {fileID: 11400000, guid: 27fe3448743fad84c9d07fce6260c272, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -312,6 +313,20 @@ MonoBehaviour:
         - m_Target: {fileID: 1229657115015383385}
           m_TargetAssemblyTypeName: EventsGame, Assembly-CSharp
           m_MethodName: PlayTimelineActivatedTrapByPlayer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1301473523276556965}
+          m_TargetAssemblyTypeName: EventsPlayer, Assembly-CSharp
+          m_MethodName: OnTeleport
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

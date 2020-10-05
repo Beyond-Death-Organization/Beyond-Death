@@ -76,6 +76,10 @@ public class EventsPlayer : MonoBehaviour
         GameVariables.Instance.Player.transform.rotation = playerSpawnRotation;
     }
 
+    public void OnTeleport() {
+        GameVariables.Instance.LastTeleportUsed.Teleport(GameVariables.Instance.Player.gameObject);
+    }
+
     public void ActivatePlayer(bool enabled) {
         GameVariables.Instance.Player.gameObject.SetActive(enabled);
     }
