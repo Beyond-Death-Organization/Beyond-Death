@@ -60,13 +60,12 @@ public class EventsGame : MonoBehaviour
     }
 
     public void PlayTimelineIntro() {
-            GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
-            return;
         if (hasGameJustStarted) {
             hasGameJustStarted = false;
             GameVariables.Instance.Timeline_PlayerIntro.Play();
         }
-        else{}
+        else
+            GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
     }
 
     public void StartMusic() {
