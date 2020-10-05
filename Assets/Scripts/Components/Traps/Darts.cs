@@ -17,7 +17,7 @@ public class Darts : TrapComponent
     private void Start() {
         nextOutputTime = Random.Range(3f, 6f);
         AnimationTimeline.stopped += director => { dartEnabled = false; };
-        GameVariables.Instance.Timeline_PlayerDarted.stopped += director => { DeadBody.SetActive(true); };
+        //GameVariables.Instance.Timeline_PlayerDarted.stopped += director => { DeadBody.SetActive(true); };
     }
 
     private void Update() {
@@ -39,7 +39,11 @@ public class Darts : TrapComponent
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
 
-        //GameVariables.Instance.LastTrapActivatedByPlayer = this;
+        GameVariables.Instance.LastTrapActivatedByPlayer = this;
         GameVariables.Instance.Timeline_PlayerDarted.Play();
+    }
+
+    public override void ToggleDeadBody() {
+        DeadBody.SetActive(true);
     }
 }

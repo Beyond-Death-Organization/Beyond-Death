@@ -13,4 +13,6 @@ public class TrapComponent : MonoBehaviour
         AnimationTimeline.Play();
         AnimationTimeline.playableGraph.GetRootPlayable(0).SetSpeed(AnimationSpeed);
     }
+
+    public virtual void ToggleDeadBody() { }
 }
