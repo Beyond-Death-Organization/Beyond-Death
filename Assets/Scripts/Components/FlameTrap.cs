@@ -27,7 +27,6 @@ public class FlameTrap : PressurePlateComponent
 
     public void Activate(bool enable)
     {
-        Debug.Log(enable);
         isEnabled = enable;
     }
 }
