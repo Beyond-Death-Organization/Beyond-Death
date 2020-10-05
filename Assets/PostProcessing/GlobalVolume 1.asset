@@ -1,44 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8724153470622544729
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
-  m_Name: ShadowsMidtonesHighlights
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  shadows:
-    m_OverrideState: 1
-    m_Value: {x: 0.5013004, y: 0.6559681, z: 1, w: -0.34003088}
-  midtones:
-    m_OverrideState: 1
-    m_Value: {x: 0.8414707, y: 1, z: 0.99999917, w: -0.23183936}
-  highlights:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0}
-  shadowsStart:
-    m_OverrideState: 0
-    m_Value: 0
-    min: 0
-  shadowsEnd:
-    m_OverrideState: 0
-    m_Value: 0.3
-    min: 0
-  highlightsStart:
-    m_OverrideState: 0
-    m_Value: 0.55
-    min: 0
-  highlightsEnd:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 0
 --- !u!114 &-7775675524621818463
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -64,7 +25,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.38
+    m_Value: 0.48
     min: 0
     max: 1
   smoothness:
@@ -94,7 +55,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.287
+    m_Value: 0.51
     min: 0
     max: 1
   response:
@@ -162,10 +123,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: GlobalVolume
+  m_Name: GlobalVolume 1
   m_EditorClassIdentifier: 
   components:
   - {fileID: -6103837730356533723}
   - {fileID: -6990283374584901467}
   - {fileID: -7775675524621818463}
-  - {fileID: -8724153470622544729}
+  - {fileID: 30650561199669519}
+--- !u!114 &30650561199669519
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.73238957, y: 1, z: 0.9388644, w: -0.061823804}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 0.9260496, y: 1, z: 0.9272371, w: 0}
+  gain:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
