@@ -25,6 +25,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
     public Animator PlayerAnimtor;
 
     public PlayableDirector Timeline_Totem_Track01, Timeline_Totem_Track02, Timeline_Totem_Track03;
+    public GameObject DoorKey01, DoorKey02, DoorKey03;
     public PlayableDirector
         Timeline_PlayerJumpOffTombeau,
         Timeline_PlayerPickupTotem,
