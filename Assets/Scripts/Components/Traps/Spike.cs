@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -44,7 +45,7 @@ public class Spike : TrapComponent
             return;
         
         spikeEnabled = false;
-
+        AudioManager.Instance.PlayClip("Spike1", GetComponent<AudioSource>());
         GameVariables.Instance.LastTrapActivatedByPlayer = this;
         GameVariables.Instance.Timeline_PlayerSpiked.Play();
     }
