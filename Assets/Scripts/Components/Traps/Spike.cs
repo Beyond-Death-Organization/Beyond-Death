@@ -14,35 +14,36 @@ public class Spike : TrapComponent
     private double timer = 0;
 
     private void Start() {
-        nextOutputTime = Random.Range(3f, 7f);
-        AnimationTimeline.stopped += director => {
-            spikeEnabled = false;
-        };
+        //nextOutputTime = Random.Range(3f, 7f);
+        //AnimationTimeline.stopped += director => { spikeEnabled = false; };        //To reactivate after animation
     }
 
-    private void Update() {
+    /*private void Update() {
         if (spikeEnabled)
-            return; 
-        
+            return;
+
         timer += Time.deltaTime;
-        
+
         if (timer >= nextOutputTime) {
             spikeEnabled = true;
             nextOutputTime += SpikeDelay;
 
             AnimationTimeline.Play();
         }
-    }
-    
+    }*/
 
-    private void OnTriggerStay(Collider other) {
+
+    private void OnTriggerEnter(Collider other) {
         if (!spikeEnabled)
             return;
-        
+
         //Make sure its player
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
+        
+        spikeEnabled = false;
 
-        EventsPlayer.Instance.OnPlayerDeath();
+        GameVariables.Instance.LastTrapActivatedByPlayer = this;
+        GameVariables.Instance.Timeline_PlayerSpiked.Play();
     }
 }

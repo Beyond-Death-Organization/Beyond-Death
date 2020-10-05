@@ -58,4 +58,8 @@ public class EventsGame : MonoBehaviour
                 break;
         }
     }
+
+    public void PlayTimelineActivatedTrapByPlayer() {
+        GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
+    }
 }
