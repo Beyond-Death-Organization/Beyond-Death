@@ -54,3 +54,5 @@ MonoBehaviour:
     AudioClip: {fileID: 8300000, guid: 65510c900420bf6479604cd14b608958, type: 3}
   - AudioName: FootStep
     AudioClip: {fileID: 8300000, guid: 4e0aac57919e6fd4790688a6a3698beb, type: 3}
+  - AudioName: PressurePlate
+    AudioClip: {fileID: 8300000, guid: 76c2f9aabb1363d4abd9e72fb1ad0864, type: 3}

@@ -62,7 +62,8 @@ MonoBehaviour:
   AnimationSpeed: 5
   AnimationTimeline: {fileID: 4844761787052446103}
   ReverseAnimation: {fileID: 4844761787707830977}
-  isPlayerTriggable: 1
+  isPlayerTriggable: 0
+  action: {fileID: 0}
 --- !u!82 &722137554163899862
 AudioSource:
   m_ObjectHideFlags: 0
@@ -84,7 +85,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0
-  MaxDistance: 1
+  MaxDistance: 50
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

@@ -37,7 +37,8 @@ public class PressurePad : TrapComponent
                 return;
         if (objectOnPadId != -1)
             return;
-        
+        if(audio != null)
+            AudioManager.Instance.PlayClip("PressurePlate", audio);
         objectOnPadId = other.gameObject.GetInstanceID();
 
         ReverseAnimation.Stop();
@@ -51,8 +52,7 @@ public class PressurePad : TrapComponent
     }
 
     private void OnTriggerExit(Collider other) {
-        if(audio != null)
-            AudioManager.Instance.PlayClip("PressurePlate", audio);
+        
         if (!isPlayerTriggable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 return;
