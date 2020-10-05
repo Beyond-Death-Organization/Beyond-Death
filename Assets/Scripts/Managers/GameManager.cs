@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        CurrentLevel = 0;
         OnRestartGame?.Invoke();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
     {
         CurrentLevel += level;
         OnNextLevel?.Invoke(CurrentLevel);
+        GameVariables.Instance.LastPressurePlateComponent?.OnPlayerDeath();
         EventsPlayer.Instance.OnPlayerRespawn();
     }
 }

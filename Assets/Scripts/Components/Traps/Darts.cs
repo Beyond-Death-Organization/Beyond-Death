@@ -17,7 +17,7 @@ public class Darts : TrapComponent
     private void Start() {
         nextOutputTime = Random.Range(3f, 6f);
         AnimationTimeline.stopped += director => { dartEnabled = false; };
-        GameVariables.Instance.Timeline_PlayerDarted.stopped += director => { DeadBody.SetActive(true); };
+        //GameVariables.Instance.Timeline_PlayerDarted.stopped += director => { DeadBody.SetActive(true); };
     }
 
     private void Update() {
@@ -30,7 +30,8 @@ public class Darts : TrapComponent
             dartEnabled = true;
             nextOutputTime += ShootDelay;
 
-            AnimationTimeline.Play();
+            //AnimationTimeline.Play();
+            PlayAnimation();
         }
     }
 

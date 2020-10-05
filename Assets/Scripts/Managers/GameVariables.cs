@@ -39,6 +39,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
     [Header("UI")] public Animator CameraFadeAnimator;
 
     [HideInInspector] public TrapComponent LastTrapActivatedByPlayer;
+    [HideInInspector] public PressurePlateComponent LastPressurePlateComponent;
     [HideInInspector] public TeleportComponent LastTeleportUsed;
 
     [Header("Wrapper")] public List<ReferenceWrapper> Wrapper = new List<ReferenceWrapper>();
