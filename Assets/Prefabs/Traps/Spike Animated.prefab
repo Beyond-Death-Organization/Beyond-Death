@@ -44,7 +44,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6957126362461010023}
   - component: {fileID: 1371949009942994431}
-  - component: {fileID: 8024974189716975410}
   m_Layer: 0
   m_Name: DeadBody
   m_TagString: Untagged
@@ -80,19 +79,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3359058, y: 0.1349001, z: 0.23916984}
   m_Center: {x: -1.0295216, y: 0.18416, z: -0.24260962}
---- !u!65 &8024974189716975410
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033874442345266141}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3026131, y: 0.07893932, z: 0.30860913}
-  m_Center: {x: -1.0382923, y: 0.22168416, z: -0.34570256}
 --- !u!1 &2134653449344276768
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +521,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AnimationSpeed: 1
   AnimationTimeline: {fileID: 9012374175461531661}
-  SpikeDelay: 3
   DeadBody: {fileID: 2033874442345266141}
 --- !u!320 &9012374175461531661
 PlayableDirector:
@@ -569,8 +554,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.12845242, y: 0.06204644, z: 0.15466434}
-  m_Center: {x: -0.0028012395, y: 0.06208919, z: -0.009859055}
+  m_Size: {x: 0.023405671, y: 0.06204644, z: 0.22932857}
+  m_Center: {x: -0.004956186, y: 0.06208919, z: -0.007907659}
 --- !u!1001 &7368186488337525277
 PrefabInstance:
   m_ObjectHideFlags: 0

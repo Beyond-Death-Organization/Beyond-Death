@@ -6,13 +6,13 @@ using Random = UnityEngine.Random;
 
 public class Spike : TrapComponent
 {
-    public float SpikeDelay = 1;
+    //public float SpikeDelay = 1;
     public GameObject DeadBody;
 
     private bool spikeEnabled = true;
 
-    private double nextOutputTime;
-    private double timer = 0;
+    //private double nextOutputTime;
+    //private double timer = 0;
 
     private void Start() {
         //nextOutputTime = Random.Range(3f, 7f);
