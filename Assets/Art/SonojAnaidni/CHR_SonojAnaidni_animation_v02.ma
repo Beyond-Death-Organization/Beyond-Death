@@ -1,6 +1,6 @@
 //Maya ASCII 2018ff09 scene
 //Name: CHR_SonojAnaidni_animation_v02.ma
-//Last modified: Mon, Oct 05, 2020 11:07:50 AM
+//Last modified: Mon, Oct 05, 2020 11:24:15 AM
 //Codeset: 1252
 file -rdi 1 -ns "CHR_SonojAnaidni_rig" -rfn "CHR_SonojAnaidni_rigRN" -op "v=0;"
 		 -typ "mayaAscii" "D:/_LD47/Assets/Art/SonojAnaidni/CHR_SonojAnaidni_rig.ma";
@@ -18,14 +18,14 @@ fileInfo "osv" "Microsoft Windows 7 Ultimate Edition, 64-bit Windows 7 Service P
 createNode transform -s -n "persp";
 	rename -uid "0BFC39B4-4465-E6E1-D523-5BBA43B67DBC";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -87.725064201177119 101.6456820704029 -143.55179767677006 ;
-	setAttr ".r" -type "double3" 333.86164726422828 -1232.1999999993934 0 ;
+	setAttr ".t" -type "double3" -135.18498536796 72.246565889011094 -74.242190475035784 ;
+	setAttr ".r" -type "double3" 337.46164726421654 -1200.5999999993012 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5F2E59F9-4771-AF3F-7021-8196C135EB77";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 194.91922237759695;
+	setAttr ".coi" 159.26429047024351;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -24604,7 +24604,7 @@ createNode script -n "uiConfigurationScriptNode";
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "5C5C0565-429E-D40E-91B7-18A18FB69B81";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 574 -ast 0 -aet 600 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 600 -ast 0 -aet 600 ";
 	setAttr ".st" 6;
 createNode reference -n "CHR_SonojAnaidni_rigRN";
 	rename -uid "DF2CB2AC-464F-7279-021C-44B3B4FF6A21";
@@ -24807,7 +24807,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 0.68096097818889678 1.70767247492480712 -6.65022027946526961"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
@@ -24815,7 +24816,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 92.04576386918715514 -3.64017588552242755 60.6373176544669974"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot" 
@@ -24833,7 +24835,7 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 0 2.28466352590380017 -6.68177768411407769"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
@@ -24841,7 +24843,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 91.49238320875544161 3.89956789661401748 -69.03881207523251362"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot" 
@@ -24859,7 +24862,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.48789170738568099 -7.26792336850485476 2.66493668310425136"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
@@ -24867,7 +24871,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 84.95153830060890243 -8.98705901040560207 0.79062424379047513"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips" 
@@ -24919,7 +24924,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -17.48855011752793231 -69.44535766353321549 12.73117799332561795"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head" 
@@ -24937,7 +24943,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 1.79291236005143739 8.21458531607905229 0.20076295260333435"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
@@ -24945,7 +24952,7 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 -63.21608410423895918"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_head_hat" 
@@ -24971,7 +24978,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -104.80920242503347595 67.03343227122057613 -16.28355638270330985"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm" 
@@ -24997,7 +25005,7 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_hand" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_hand" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -39.9522574369348078 0 0"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_hand" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lt_hand" 
@@ -25023,7 +25031,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -82.97113470871890684 -76.4567711935362837 -42.5381458113561024"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm" 
@@ -25049,7 +25058,7 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_hand" 
 		"translateZ" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_hand" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" -20.70943198127045903 0 0"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_hand" 
 		"rotateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_chest|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_arm|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_hand" 
@@ -25113,26 +25122,26 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		"preferredAngle" " -type \"double3\" 0.64019846069673259 -8.76834667689704261 -4.19235573415135487"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg" 
-		"rotate" " -type \"double3\" -1.57729262394962e-10 1.9735285960299907e-05 -0.00091584394149291407"
+		"rotate" " -type \"double3\" -48.77310027433064477 -2.71696962616610538 -1.19220141100017551"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg" 
 		"preferredAngle" " -type \"double3\" 0.19952136296946871 -48.80380068694748275 -5.04623774537141578"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_knee" 
-		"rotate" " -type \"double3\" 0 -3.947056724392925e-05 0.0018316876651318093"
+		"rotate" " -type \"double3\" 0 3.65588167409680898 0.0010907070887913582"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_knee" 
 		"preferredAngle" " -type \"double3\" 0 9.03731707992205457 0"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_knee|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_lf_foot" 
 		"preferredAngle" " -type \"double3\" 3.61977120408629061 -3.02909629649896317 3.85064561632128122"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg" 
-		"rotate" " -type \"double3\" 2.4906183459913116e-05 9.0386658761954625e-05 -2.4893434751381858e-05"
+		"rotate" " -type \"double3\" 64.14448506566841957 -11.36084347214254109 -35.81991274936424219"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg" 
 		"preferredAngle" " -type \"double3\" 8.23739014515445689 44.46399499297615421 14.42882749188746416"
 		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_knee" 
-		"rotate" " -type \"double3\" 0 -0.00018077772734463124 4.9788168558754423e-05"
+		"rotate" " -type \"double3\" 0 62.55648198414423433 4.108491441630574e-06"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_knee" 
 		"preferredAngle" " -type \"double3\" 0 68.18291215603730393 0"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_root|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_hips|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_leg|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_knee|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_Bn_rt_foot" 
@@ -25141,7 +25150,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot_poleVector" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot_poleVector" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 3.91605182303684707 -5.04186179013520963 -5.99097225052344839"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot_poleVector" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_lf_foot_poleVector" 
@@ -25167,7 +25177,8 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot_poleVector" 
 		"visibility" " -av 1"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot_poleVector" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -9.54547470824292432 -6.63018500545197398 -7.48875997846533803"
+		
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot_poleVector" 
 		"translateX" " -av"
 		2 "|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_TRS|CHR_SonojAnaidni_rig:CHR_SonojAnaidni_CTRL_rt_foot_poleVector" 
@@ -25215,7 +25226,7 @@ createNode reference -n "CHR_SonojAnaidni_rigRN";
 		2 "|CHR_SonojAnaidni_rig:SonojAnaidni_mesh_grp|CHR_SonojAnaidni_rig:SonojAnaidni_arms|CHR_SonojAnaidni_rig:SonojAnaidni_armsShape" 
 		"instObjGroups.objectGroups" " -s 4"
 		2 "CHR_SonojAnaidni_rig:CHR_SonojAnaidni_BNs" "displayType" " 0"
-		2 "CHR_SonojAnaidni_rig:CHR_SonojAnaidni_BNs" "visibility" " 0"
+		2 "CHR_SonojAnaidni_rig:CHR_SonojAnaidni_BNs" "visibility" " 1"
 		2 "CHR_SonojAnaidni_rig:MapFBXASC032FBXASC0351" "fileTextureName" " -type \"string\" \"D:/_LD47/Assets/Art/SonojAnaidni/SonojAnaidni/SonojAnaidni.png\""
 		
 		2 "CHR_SonojAnaidni_rig:MapFBXASC032FBXASC0351" "filterType" " 0"
@@ -29936,7 +29947,8 @@ createNode animCurveTU -n "CHR_SonojAnaidni_CTRL_TRS_scaleZ";
 	setAttr ".wgt" no;
 	setAttr ".ktv[0]"  -5 1;
 select -ne :time1;
-	setAttr ".o" 0;
+	setAttr ".o" 568;
+	setAttr ".unw" 568;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
