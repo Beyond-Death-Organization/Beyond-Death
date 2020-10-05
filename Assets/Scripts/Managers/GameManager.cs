@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        CurrentLevel = 0;
         OnRestartGame?.Invoke();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
