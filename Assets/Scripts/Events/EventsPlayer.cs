@@ -48,7 +48,7 @@ public class EventsPlayer : MonoBehaviour
     /// Enable player inputs at the end of timeline
     /// </summary>
     public void OnPlayerRespawn() {
-        GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
+        EventsGame.Instance.PlayTimelineIntro();
         StartCoroutine(cheapFixe());
     }
 

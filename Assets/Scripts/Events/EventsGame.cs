@@ -23,6 +23,7 @@ public class EventsGame : MonoBehaviour
 
 
     private Camera mainCamera;
+    private bool hasGameJustStarted = true;
 
     private void Start() {
         mainCamera = Camera.main;
@@ -56,5 +57,18 @@ public class EventsGame : MonoBehaviour
     public void PlayTimelineActivatedTrapByPlayer() {
         if (GameVariables.Instance.LastTrapActivatedByPlayer != null)
             GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
+    }
+
+    public void PlayTimelineIntro() {
+        if (hasGameJustStarted) {
+            hasGameJustStarted = false;
+            GameVariables.Instance.Timeline_PlayerIntro.Play();
+        }
+        else
+            GameVariables.Instance.Timeline_PlayerJumpOffTombeau.Play();
+    }
+
+    public void StartMusic() {
+        Managers.AudioManager.Instance.PlayMusic("MusicA",GetComponent<AudioSource>());
     }
 }
