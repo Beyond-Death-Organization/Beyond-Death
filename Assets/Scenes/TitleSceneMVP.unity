@@ -159,7 +159,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.700012, y: -123.600006}
+  m_AnchoredPosition: {x: 4.699951, y: -123.599976}
   m_SizeDelta: {x: -435, y: -257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &161903004
@@ -176,6 +176,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PointerScale: 1.1
   HoverClip: {fileID: 8300000, guid: a587536bf5d0e04448f0d104381e04d3, type: 3}
+  image: {fileID: 1957855435}
 --- !u!114 &161903005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -230,6 +231,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1957855433}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &161903006
 MonoBehaviour:
@@ -488,7 +501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -908,7 +921,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957855434
 RectTransform:
   m_ObjectHideFlags: 0
@@ -925,7 +938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.4769897, y: -42.190002}
+  m_AnchoredPosition: {x: 2.4770508, y: -42.190002}
   m_SizeDelta: {x: -778.3477, y: -428.37888}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1957855435
@@ -953,7 +966,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 1
+  m_FillAmount: 0.105
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

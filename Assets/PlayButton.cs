@@ -2,12 +2,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public float PointerScale = 1;
     public AudioClip HoverClip;
     private AudioSource source;
+    public Image image;
     private void Awake()
     {
         source = gameObject.AddComponent<AudioSource>();
@@ -35,29 +37,20 @@ public class PlayButton : MonoBehaviour, IPointerEnterHandler, IPointerExitHandl
     {
         yield return null;
 
-        Debug.Log("test");
-        //Begin to load the Scene you specify
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(1);
-        //Don't let the Scene activate until you allow it to
         asyncOperation.allowSceneActivation = false;
-        //When the load is still in progress, output the Text and progress bar
+
         while (!asyncOperation.isDone)
         {
-            //Output the current progress
-            // m_Text.text = "Loading progress: " + (asyncOperation.progress * 100) + "%";
-            Debug.Log("Loading progress: " + (asyncOperation.progress * 100) + "%");
+            float currentProgress = Mathf.Clamp01(asyncOperation.progress / 0.9f);
+
+            image.fillAmount = currentProgress;
             
             // Check if the load has finished
             if (asyncOperation.progress >= 0.9f)
             {
-                //Change the Text to show the Scene is ready
-                // m_Text.text = "Press the space bar to continue";
-                Debug.Log("Press the space bar to continue");
-
-                //Wait to you press the space key to activate the Scene
-                if (Input.GetKeyDown(KeyCode.Space))
-                    //Activate the Scene
-                    asyncOperation.allowSceneActivation = true;
+                asyncOperation.allowSceneActivation = true;
+                yield return new WaitForSeconds(0.1f);
             }
 
             yield return null;
