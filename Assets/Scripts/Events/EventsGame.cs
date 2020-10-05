@@ -33,16 +33,7 @@ public class EventsGame : MonoBehaviour
     }
 
     public void CameraFade(bool isFadeIn) {
-        if (isFadeIn) {
-            GameVariables.Instance.CameraFadeOut.gameObject.SetActive(false);
-            GameVariables.Instance.CameraFadeIn.gameObject.SetActive(true);
-            GameVariables.Instance.CameraFadeIn.SetTrigger("FadeIn");
-        }
-        else {
-            GameVariables.Instance.CameraFadeIn.gameObject.SetActive(false);
-            GameVariables.Instance.CameraFadeOut.gameObject.SetActive(true);
-            GameVariables.Instance.CameraFadeOut.SetTrigger("FadeOut");
-        }
+        GameVariables.Instance.CameraFadeAnimator.SetTrigger(isFadeIn ? "FadeIn" : "FadeOut");
     }
 
     public void PlayDoorTotemTimeline(int amountTotem) {
@@ -60,11 +51,7 @@ public class EventsGame : MonoBehaviour
     }
 
     public void PlayTimelineActivatedTrapByPlayer() {
-        if (GameVariables.Instance.LastTrapActivatedByPlayer != null) {
+        if (GameVariables.Instance.LastTrapActivatedByPlayer != null)
             GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
-            return;
-        }
-        
-        EventsPlayer.Instance.OnPlayerRespawn();
     }
 }

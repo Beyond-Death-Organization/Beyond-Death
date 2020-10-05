@@ -90,8 +90,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 663994842567492742}
-  - component: {fileID: 6157322275034552334}
   - component: {fileID: 6529799305879467342}
+  - component: {fileID: 1459316685937069057}
   m_Layer: 11
   m_Name: PressurePlate_Player
   m_TagString: Untagged
@@ -114,21 +114,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6157322275034552334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3317926912333482783}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 369829903ff59144fb2e37262b9ea22e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  IsPlayerActivatable: 1
-  IsInteractableActivatable: 0
-  IsActivated: 0
 --- !u!65 &6529799305879467342
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -142,3 +127,36 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24096823, y: 0.106999695, z: 0.24559459}
   m_Center: {x: -0.00027489662, y: 0.05004534, z: -0.0008690506}
+--- !u!114 &1459316685937069057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3317926912333482783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e51024fd555d49249865d4493a9347ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsPlayerActivatable: 1
+  IsInteractableActivatable: 0
+  IsActivated: 0
+  OnPlateActivated:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: EventsPlayer, Assembly-CSharp
+        m_MethodName: OnPlayerRespawn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnPlateDeactivated:
+    m_PersistentCalls:
+      m_Calls: []

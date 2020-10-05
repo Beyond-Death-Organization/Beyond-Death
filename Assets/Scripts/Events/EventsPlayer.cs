@@ -50,9 +50,6 @@ public class EventsPlayer : MonoBehaviour
 
     public void OnPlayerDeath() {
         SetInputs(false);
-        //Fade out
-        EventsGame.Instance.CameraFade(false);
-        //
         GameManager.Instance.NextLevel();
         //Increment death number UI
         //Call OnPlayerRespawn in X seconds (TimeManager)

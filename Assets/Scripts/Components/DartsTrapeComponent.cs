@@ -5,15 +5,21 @@ using UnityEngine;
 
 public class DartsTrapeComponent : PressurePlateComponent
 {
+    [Tooltip("Time before being able to shoot again")]
     public float Delay = 5;
+    [Tooltip("Time before darts reset")]
+    public float ResetDelay = 2;
     public float Speed = 1;
     public AnimationCurve DistanceOverTime;
     public GameObject Darts;
 
     private float timerBeforeShoot;
     private bool isReadyToShoot => timerBeforeShoot <= 0;
+    private bool isReadyToReset => timerBeforeShoot <= Delay - ResetDelay;
     private bool hasBeenReset = true;
     private Vector3 dartsInitialPosition;
+
+    public Coroutine CurrentCoroutine;
 
     private void Awake() {
         dartsInitialPosition = Darts.transform.localPosition;
@@ -22,16 +28,16 @@ public class DartsTrapeComponent : PressurePlateComponent
     private void Update() {
         if (!isReadyToShoot)
             timerBeforeShoot -= Time.deltaTime;
-        else
-            if(!hasBeenReset)
-                ResetDarts();
+
+        if (!hasBeenReset && isReadyToReset)
+            ResetDarts();
     }
 
     protected override void OnActivation() {
         base.OnActivation();
         if (!isReadyToShoot)
             return;
-        
+
         StartCoroutine(Shoot());
     }
 
@@ -43,7 +49,7 @@ public class DartsTrapeComponent : PressurePlateComponent
     private IEnumerator Shoot() {
         timerBeforeShoot = Delay;
         hasBeenReset = false;
-        
+
         float timer = 0;
         Transform dartsTransform = Darts.transform;
 

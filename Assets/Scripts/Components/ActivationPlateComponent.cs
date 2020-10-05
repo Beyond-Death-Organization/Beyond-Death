@@ -1,21 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class FlameTrap : PressurePlateComponent
+public class ActivationPlateComponent : PressurePlateComponent
 {
-    public ParticleSystem Fire;
-    public Collider Hitbox;
-    
+    public UnityEvent OnPlateActivated, OnPlateDeactivated;
+
     protected override void OnActivation() {
         base.OnActivation();
-        Fire.Play();
-        Hitbox.enabled = true;
+        OnPlateActivated.Invoke();
     }
 
     protected override void OnDeactivation() {
         base.OnDeactivation();
-        Fire.Stop();
-        Hitbox.enabled = false;
+        OnPlateDeactivated.Invoke();
     }
 }
