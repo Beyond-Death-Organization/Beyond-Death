@@ -579,8 +579,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.116109, y: 3.5799809, z: 2.722622}
-  m_Center: {x: -1.229126, y: 1.1564708, z: -1.7244473}
+  m_Size: {x: 2.116109, y: 4.357333, z: 2.722622}
+  m_Center: {x: -1.229126, y: 1.545147, z: -1.7244473}
 --- !u!1 &8590018702911875393
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,8 +978,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.7889395, y: 2.4297643, z: 2.101665}
-  m_Center: {x: 2.3175168, y: 0.5813625, z: -0.062060356}
+  m_Size: {x: 1.2260299, y: 4.038078, z: 2.101665}
+  m_Center: {x: 2.0360618, y: 1.3855193, z: -0.062060356}
 --- !u!1 &8590018703479531023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &3028589884801094992 stripped
@@ -2349,6 +2353,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -2412,6 +2420,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &4403720530669474026 stripped
@@ -2474,6 +2486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &3924164417415851313 stripped
@@ -2535,6 +2551,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -2660,6 +2680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &882784083757829800 stripped
@@ -2721,6 +2745,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -2784,6 +2812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &1937955129678820598 stripped
@@ -2846,6 +2878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &1799916306349493271 stripped
@@ -2907,6 +2943,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -3098,6 +3138,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &7903381352701865305 stripped
@@ -3160,6 +3204,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.013
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &7165158256674267974 stripped
@@ -3221,6 +3273,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -3346,6 +3402,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &8701755492347866862 stripped
@@ -3470,6 +3530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &8172923941099185065 stripped
@@ -3531,6 +3595,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -3594,6 +3662,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &5417215609352086979 stripped
@@ -3656,6 +3728,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tile_full_ruins_02 (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
 --- !u!4 &5028071496331210047 stripped
@@ -3717,6 +3793,10 @@ PrefabInstance:
     - target: {fileID: 3096646020873339003, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
       propertyPath: m_Name
       value: Tile_full_ruins_02 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3275179449387493627, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 573a41c07d44af5458ae7e733d946cb8, type: 3}
@@ -20841,6 +20921,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8590018704171297435}
     m_Modifications:
+    - target: {fileID: 598799775184528006, guid: 6e59399ce051e7244bbf7280bbe3474d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 1136565462587212358, guid: 6e59399ce051e7244bbf7280bbe3474d, type: 3}
       propertyPath: m_Name
       value: Tile_full_grass (201)
