@@ -69,6 +69,11 @@ public class EventsGame : MonoBehaviour
     }
 
     public void StartMusic() {
-        Managers.AudioManager.Instance.PlayMusic("MusicA",GetComponent<AudioSource>());
+        Managers.AudioManager.Instance.PlayMusic("MusicA", GetComponent<AudioSource>());
+    }
+
+    public void OnToggleBody() {
+        if (GameVariables.Instance.LastTrapActivatedByPlayer != null)
+            GameVariables.Instance.LastTrapActivatedByPlayer.ToggleDeadBody();
     }
 }

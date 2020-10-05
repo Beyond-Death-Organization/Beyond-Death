@@ -17,7 +17,7 @@ public class Spike : TrapComponent
     private void Start() {
         //nextOutputTime = Random.Range(3f, 7f);
         //AnimationTimeline.stopped += director => { spikeEnabled = false; };        //To reactivate after animation
-        GameVariables.Instance.Timeline_PlayerSpiked.stopped += director => { DeadBody.SetActive(true); };
+        //GameVariables.Instance.Timeline_PlayerSpiked.stopped += director => { DeadBody.SetActive(true); };
     }
 
     private void Update() {
@@ -47,5 +47,9 @@ public class Spike : TrapComponent
 
         GameVariables.Instance.LastTrapActivatedByPlayer = this;
         GameVariables.Instance.Timeline_PlayerSpiked.Play();
+    }
+    
+    public override void ToggleDeadBody() {
+        DeadBody.SetActive(true);
     }
 }
