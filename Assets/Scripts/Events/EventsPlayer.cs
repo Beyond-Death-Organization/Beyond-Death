@@ -86,6 +86,11 @@ public class EventsPlayer : MonoBehaviour
         GameVariables.Instance.PlayerAnimtor.enabled = enabled;
     }
 
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.P))
+            OnTotemPickup();
+    }
+
     public void OnTotemPickup() {
         switch (amountTotemPicked) {
             case 0:
