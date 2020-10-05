@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8029304085408885788}
   - component: {fileID: 8029304085408885784}
   - component: {fileID: 8029304085408885791}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PreventFall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
