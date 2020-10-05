@@ -26,6 +26,7 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
     
     [Header("Timeline")]
     public PlayableDirector Timeline_PlayerJumpOffTombeau;
+    public PlayableDirector Timeline_PlayerDrown;
     public PlayableDirector Timeline_PlayerPickupTotem;
     public PlayableDirector Timeline_Totem_Track01, Timeline_Totem_Track02, Timeline_Totem_Track03;
 
