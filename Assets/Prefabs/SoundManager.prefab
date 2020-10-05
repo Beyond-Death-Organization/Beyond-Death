@@ -45,14 +45,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audiosClip:
   - AudioName: MusicA
-    AudioClip: {fileID: 8300000, guid: eade7733d240c5647820dab335a692f9, type: 3}
+    AudioClip: {fileID: 8300000, guid: 552c7660fea93da4a9097a869eca1d0a, type: 3}
   - AudioName: MusicB
-    AudioClip: {fileID: 8300000, guid: eade7733d240c5647820dab335a692f9, type: 3}
+    AudioClip: {fileID: 8300000, guid: e367f4d06a4479e4fa534a032483783a, type: 3}
   - AudioName: MusicC
-    AudioClip: {fileID: 8300000, guid: eade7733d240c5647820dab335a692f9, type: 3}
+    AudioClip: {fileID: 8300000, guid: 467b14c021513274888b39d9e5704798, type: 3}
   - AudioName: MusicD
-    AudioClip: {fileID: 8300000, guid: 65510c900420bf6479604cd14b608958, type: 3}
-  - AudioName: FootStep
-    AudioClip: {fileID: 8300000, guid: 4e0aac57919e6fd4790688a6a3698beb, type: 3}
-  - AudioName: PressurePlate
-    AudioClip: {fileID: 8300000, guid: 76c2f9aabb1363d4abd9e72fb1ad0864, type: 3}
+    AudioClip: {fileID: 8300000, guid: d429a31bacbb2424597bf8ba5beea3bf, type: 3}
+  - AudioName: FootStep1
+    AudioClip: {fileID: 8300000, guid: aae15c57f16cb9642bf7e2c192df8cde, type: 3}
+  - AudioName: FootStep2
+    AudioClip: {fileID: 8300000, guid: d8071b6b34d9c9848a41afe22ccc98e7, type: 3}
+  - AudioName: FootStep3
+    AudioClip: {fileID: 8300000, guid: ec2cb7602be8cbf468977f863c843840, type: 3}
+  - AudioName: Drawn
+    AudioClip: {fileID: 8300000, guid: b9cc0acab46f8fe438c860a6f2d81dde, type: 3}
+  - AudioName: WakeUp
+    AudioClip: {fileID: 8300000, guid: 281afb9555cf76f4a9e2e5c537000744, type: 3}
