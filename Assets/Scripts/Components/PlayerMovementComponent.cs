@@ -7,7 +7,6 @@ public class PlayerMovementComponent : MonoBehaviour
 {
     public float Speed;
     public float WorldRotation = -45;
-
     private Player player;
     private Vector3 spawnPosition;
     private Quaternion spawnRotation;
