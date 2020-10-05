@@ -31,7 +31,10 @@ public class PressurePlateComponent : MonoBehaviour
     }
 
     public virtual void Awake() {
-        OnActivation += () => IsActivated = true;
+        OnActivation += () =>
+        {
+            IsActivated = true;
+        };
         OnDeactivation += () => IsActivated = false;
         HomeMadeAwake();
     }
@@ -45,7 +48,10 @@ public class PressurePlateComponent : MonoBehaviour
 
         if (IsPlayerActivatable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
+            {
+                GameVariables.Instance.LastPressurePlateComponent = this;
                 AmountObjectsOnPressurePlate++;
+            }
     }
 
     private void OnTriggerExit(Collider other) {
@@ -56,5 +62,11 @@ public class PressurePlateComponent : MonoBehaviour
         if (IsPlayerActivatable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 AmountObjectsOnPressurePlate--;
+    }
+
+    public void OnPlayerDeath()
+    {
+        if(IsPlayerActivatable && !IsInteractableActivatable)
+            if (AmountObjectsOnPressurePlate > 0) AmountObjectsOnPressurePlate--;
     }
 }
