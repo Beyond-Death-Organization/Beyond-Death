@@ -30,7 +30,8 @@ public class Darts : TrapComponent
             dartEnabled = true;
             nextOutputTime += ShootDelay;
 
-            AnimationTimeline.Play();
+            //AnimationTimeline.Play();
+            PlayAnimation();
         }
     }
 
