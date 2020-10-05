@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using Rewired;
 using UnityEngine;
 using UnityEngine.Events;
@@ -24,6 +26,7 @@ public class EventsPlayer : MonoBehaviour
 
     [HideInInspector] public UnityEvent OnToggleDeadBodies;
 
+    public AudioSource cheapFixeAudio;
     //Player info (hardcode but fk it)
     private Vector3 playerSpawnPosition;
     private Quaternion playerSpawnRotation;
@@ -46,8 +49,14 @@ public class EventsPlayer : MonoBehaviour
     /// </summary>
     public void OnPlayerRespawn() {
         EventsGame.Instance.PlayTimelineIntro();
+        StartCoroutine(cheapFixe());
     }
 
+    IEnumerator cheapFixe()
+    {
+        yield return new WaitForSeconds(1);
+        AudioManager.Instance.PlayClip("WakeUp", cheapFixeAudio);
+    }
     public void OnPlayerDeath() {
         SetInputs(false);
         GameManager.Instance.NextLevel();

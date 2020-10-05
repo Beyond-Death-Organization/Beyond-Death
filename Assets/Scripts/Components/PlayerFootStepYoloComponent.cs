@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Managers;
+﻿using Managers;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -30,7 +27,6 @@ public class PlayerFootStepYoloComponent : MonoBehaviour
                 break;
             
         }
-        AudioManager.Instance.PlayClip("FootStep", audioSource);
     }
 
     public void OnFootStepLeft() {
@@ -48,6 +44,5 @@ public class PlayerFootStepYoloComponent : MonoBehaviour
                 AudioManager.Instance.PlayClip("FootStep3", audioSource);
                 break;
         }
-        AudioManager.Instance.PlayClip("FootStep", audioSource);
     }
 }
