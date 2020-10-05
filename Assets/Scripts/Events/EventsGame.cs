@@ -44,4 +44,22 @@ public class EventsGame : MonoBehaviour
             GameVariables.Instance.CameraFadeOut.SetTrigger("FadeOut");
         }
     }
+
+    public void PlayDoorTotemTimeline(int amountTotem) {
+        switch (amountTotem) {
+            case 1:
+                GameVariables.Instance.Timeline_Totem_Track01.Play();
+                break;
+            case 2:
+                GameVariables.Instance.Timeline_Totem_Track02.Play();
+                break;
+            case 3:
+                GameVariables.Instance.Timeline_Totem_Track03.Play();
+                break;
+        }
+    }
+
+    public void PlayTimelineActivatedTrapByPlayer() {
+        GameVariables.Instance.LastTrapActivatedByPlayer.PlayAnimation();
+    }
 }

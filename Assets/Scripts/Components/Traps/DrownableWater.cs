@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DrownableWater : TrapComponent
+public class DrownableWater : MonoBehaviour
 {
     public bool enabled = true;
     public GameObject DeadBody;
@@ -19,7 +19,7 @@ public class DrownableWater : TrapComponent
             return;
 
         enabled = false;
-        PlayAnimation();
+        GameVariables.Instance.Timeline_PlayerDrown.Play();
         EventsPlayer.Instance.OnToggleDeadBodies.AddListener((() => { DeadBody.SetActive(true); }));
         //EventsPlayer.Instance.OnToggleDeadBodies.RemoveListener((() => { DeadBody.SetActive(true); }));
     }
