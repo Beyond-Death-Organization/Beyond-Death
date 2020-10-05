@@ -15,6 +15,10 @@ public class PressurePlateComponent : MonoBehaviour
 
     private ushort amountObjectsOnPressurePlate = 0;
 
+    public delegate void EmptyDelegate();
+
+    public EmptyDelegate OnActivation, OnDeactivation;
+
     private ushort AmountObjectsOnPressurePlate {
         get => amountObjectsOnPressurePlate;
         set {
@@ -25,6 +29,14 @@ public class PressurePlateComponent : MonoBehaviour
                 OnActivation();
         }
     }
+
+    public virtual void Awake() {
+        OnActivation += () => IsActivated = true;
+        OnDeactivation += () => IsActivated = false;
+        HomeMadeAwake();
+    }
+
+    protected virtual void HomeMadeAwake() { }
 
     private void OnTriggerEnter(Collider other) {
         if (IsInteractableActivatable)
@@ -44,13 +56,5 @@ public class PressurePlateComponent : MonoBehaviour
         if (IsPlayerActivatable)
             if (other.TryGetComponent(out PlayerMovementComponent player))
                 AmountObjectsOnPressurePlate--;
-    }
-
-    protected virtual void OnActivation() {
-        IsActivated = true;
-    }
-
-    protected virtual void OnDeactivation() {
-        IsActivated = false;
     }
 }

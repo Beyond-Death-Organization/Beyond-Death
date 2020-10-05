@@ -7,8 +7,8 @@ public class DartsTrapeComponent : PressurePlateComponent
 {
     [Tooltip("Time before being able to shoot again")]
     public float Delay = 5;
-    [Tooltip("Time before darts reset")]
-    public float ResetDelay = 2;
+
+    [Tooltip("Time before darts reset")] public float ResetDelay = 2;
     public float Speed = 1;
     public AnimationCurve DistanceOverTime;
     public GameObject Darts;
@@ -21,8 +21,15 @@ public class DartsTrapeComponent : PressurePlateComponent
 
     public Coroutine CurrentCoroutine;
 
-    private void Awake() {
+    public override void Awake() {
         dartsInitialPosition = Darts.transform.localPosition;
+
+        OnActivation += () => {
+            if (!isReadyToShoot)
+                return;
+
+            StartCoroutine(Shoot());
+        };
     }
 
     private void Update() {
@@ -31,14 +38,6 @@ public class DartsTrapeComponent : PressurePlateComponent
 
         if (!hasBeenReset && isReadyToReset)
             ResetDarts();
-    }
-
-    protected override void OnActivation() {
-        base.OnActivation();
-        if (!isReadyToShoot)
-            return;
-
-        StartCoroutine(Shoot());
     }
 
     private void ResetDarts() {

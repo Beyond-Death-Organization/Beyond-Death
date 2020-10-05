@@ -9644,6 +9644,8 @@ GameObject:
   - component: {fileID: 5072298045532894969}
   - component: {fileID: 5072298045532894950}
   - component: {fileID: 5072298045532894951}
+  - component: {fileID: 963657704}
+  - component: {fileID: 963657703}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -9659,7 +9661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5072298045532894948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.496, y: 0.225, z: -0.232}
+  m_LocalPosition: {x: 0.492, y: 0.225, z: -0.232}
   m_LocalScale: {x: 0.033, y: 0.033, z: 0.033}
   m_Children:
   - {fileID: 5072298045279214503}
@@ -14448,6 +14450,31 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!65 &963657704
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072298045532894948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4207507, y: 9.217772, z: 15.175591}
+  m_Center: {x: 0.020691842, y: -1.5674026, z: 6.837341}
+--- !u!114 &963657703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072298045532894948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78902d89a706e3849812c9a04cfde84c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5072298045982090632
 GameObject:
   m_ObjectHideFlags: 0
@@ -19400,7 +19427,7 @@ MonoBehaviour:
   IsInteractableActivatable: 0
   IsActivated: 0
   Fire: {fileID: 5072298045532894950}
-  Hitbox: {fileID: 0}
+  Hitbox: {fileID: 963657704}
 --- !u!65 &1132575623650299533
 BoxCollider:
   m_ObjectHideFlags: 0

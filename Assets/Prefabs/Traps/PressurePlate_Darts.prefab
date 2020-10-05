@@ -50,7 +50,7 @@ MonoBehaviour:
   IsInteractableActivatable: 0
   IsActivated: 0
   Delay: 5
-  ResetDelay: 0
+  ResetDelay: 2
   Speed: 1
   DistanceOverTime:
     serializedVersion: 2

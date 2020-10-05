@@ -7,13 +7,8 @@ public class ActivationPlateComponent : PressurePlateComponent
 {
     public UnityEvent OnPlateActivated, OnPlateDeactivated;
 
-    protected override void OnActivation() {
-        base.OnActivation();
-        OnPlateActivated.Invoke();
-    }
-
-    protected override void OnDeactivation() {
-        base.OnDeactivation();
-        OnPlateDeactivated.Invoke();
+    public override void Awake() {
+        OnActivation += OnPlateActivated.Invoke;
+        OnDeactivation += OnPlateDeactivated.Invoke;
     }
 }
