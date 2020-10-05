@@ -43,6 +43,8 @@ public class GameManager : MonoBehaviour
     public void NextLevel(int level = 1)
     {
         CurrentLevel += level;
+        if(CurrentLevel == 12)
+            RestartGame();
         OnNextLevel?.Invoke(CurrentLevel);
         EventsPlayer.Instance.OnPlayerRespawn();
     }
