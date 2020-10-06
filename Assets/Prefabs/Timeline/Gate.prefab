@@ -4686,7 +4686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7916751735395527984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.614, y: 0.81, z: 3.296}
+  m_LocalPosition: {x: -10.614, y: 0.81, z: 3.709}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5412965535571884238}
@@ -5190,6 +5190,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 481952858159106292, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1371529706813210780, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
       propertyPath: m_Name
       value: Gate_Mesh
@@ -5245,6 +5249,18 @@ PrefabInstance:
     - target: {fileID: 3597227424038394245, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870270592006480080, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5791856118153744900, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.621
+      objectReference: {fileID: 0}
+    - target: {fileID: 8884344706067177263, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.6209998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: facd5a28ed1b67843ac7ad1ed52617ab, type: 3}
