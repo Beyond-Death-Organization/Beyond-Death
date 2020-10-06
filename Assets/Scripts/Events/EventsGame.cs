@@ -77,7 +77,11 @@ public class EventsGame : MonoBehaviour
             GameVariables.Instance.LastTrapActivatedByPlayer.ToggleDeadBody();
     }
 
-    public void EndGame() {
+    public void PlayTimelinePlayerWalkIntoGate() {
         GameVariables.Instance.Timeline_PlayerWalkInGate.Play();
+    }
+
+    public void OnEndGame() {
+        GameManager.Instance.RestartGame();
     }
 }

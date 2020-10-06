@@ -9,6 +9,6 @@ public class GateComponent : MonoBehaviour
         if (!other.TryGetComponent(out PlayerMovementComponent player))
             return;
         
-        EventsGame.Instance.EndGame();
+        EventsGame.Instance.PlayTimelinePlayerWalkIntoGate();
     }
 }
