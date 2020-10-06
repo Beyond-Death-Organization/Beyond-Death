@@ -60,7 +60,7 @@ public class EventsGame : MonoBehaviour
     }
 
     public void PlayTimelineIntro() {
-        if (hasGameJustStarted) {
+        if (hasGameJustStarted && !GameVariables.Instance.SkipIntroTimeline) {
             hasGameJustStarted = false;
             GameVariables.Instance.Timeline_PlayerIntro.Play();
         }

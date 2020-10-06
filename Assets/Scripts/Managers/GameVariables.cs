@@ -21,6 +21,8 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
 
 #endregion
 
+    public bool SkipIntroTimeline = false;
+
     [Header("Player")] public PlayerMovementComponent Player;
     public Animator PlayerAnimtor;
 
