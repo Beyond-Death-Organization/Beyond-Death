@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
@@ -57,8 +58,8 @@ public class DialogBox : MonoBehaviour
             if (Regex.IsMatch(textPiece, @"^(\(?\+?[0-9]*\)?)?[0-9.,_\- \(\)]*$"))
             {
                 string tmp = Regex.Replace(textPiece, " ", "");
-                tmp = Regex.Replace(tmp, "[.]", ",");
-                if (float.TryParse(tmp, out var floatTmp))
+                tmp = Regex.Replace(tmp, "[,]", ".");
+                if (float.TryParse(tmp,NumberStyles.Any , CultureInfo.InvariantCulture,out var floatTmp ))
                     timeSplit.Add(floatTmp);
                 else
                     Debug.Log("Please verify balise syntax for notification bar");
