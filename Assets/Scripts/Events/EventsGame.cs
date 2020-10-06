@@ -76,4 +76,8 @@ public class EventsGame : MonoBehaviour
         if (GameVariables.Instance.LastTrapActivatedByPlayer != null)
             GameVariables.Instance.LastTrapActivatedByPlayer.ToggleDeadBody();
     }
+
+    public void EndGame() {
+        GameVariables.Instance.Timeline_PlayerWalkInGate.Play();
+    }
 }

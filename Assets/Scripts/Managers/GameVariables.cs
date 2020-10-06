@@ -34,7 +34,8 @@ public class GameVariables : MonoBehaviour, ISerializationCallbackReceiver
         Timeline_PlayerSpiked,
         Timeline_PlayerDarted,
         Timeline_PlayerKilled,
-        Timeline_PlayerTeleport;
+        Timeline_PlayerTeleport,
+        Timeline_PlayerWalkInGate;
 
     [Header("UI")] public Animator CameraFadeAnimator;
 
