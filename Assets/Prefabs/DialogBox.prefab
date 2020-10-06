@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -92,12 +92,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 22
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 14
+  m_fontSizeMax: 22
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
@@ -230,12 +230,12 @@ MonoBehaviour:
   timeSplit: []
   isStart: 0
   beginTime: -1
-  text: Welcome, young adventurer.<t>3</t>I am the soul collector and you are stranded
-    on my island<t>5</t>I collect the souls of the ones who dare visit my domain<t>10</t>I
-    need 12 sacrifices to be able to collect your soul.<t>14</t>If your soul is mine,
-    you will be forever stuck here, and be my eternal servant.<t>18</t>So,, let's
-    play a game.<t>24</t>The only way out, is through this, door.<t>27<t>It will
-    only open if you find the 3 totems that are hidden, through out this island.<t>30</t>Be
-    aware, if you die, my magic will rewind time and put you back to where you started,
-    but this sacrifice will count towards my, goal.<t>36</t>Go on, young soul, and
-    remember, death, is not always the end...<t>46</t>
+  text: Welcome, young adventurer.<t>2.9</t> I am the soul collector and you are
+    stranded on my island<t>7</t> I collect the souls of the ones who dare visit
+    my domain<t>10.5</t> I need 12 sacrifices to be able to collect your soul.<t>15,5</t>
+    If your soul is mine, you will be forever stuck here, and be my eternal servant.<t>22</t>
+    So... let's play a game.<t>24</t> The only way out, is through this, door.<t>27<t>
+    It will only open if you find the 3 totems that are hidden, through out this
+    island.<t>32.5</t> Be aware, if you die, my magic will rewind time and put you
+    back to where you started, but this sacrifice will count towards my, goal.<t>42.7</t>
+    Go on, young soul, and remember, death, is not always the end...
