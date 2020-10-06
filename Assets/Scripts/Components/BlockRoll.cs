@@ -8,6 +8,8 @@ namespace Components
     public class BlockRoll : InteractableObject
     {
         private float y;
+        public float force = 10;
+
         private Rigidbody body;
         private void Awake()
         {
@@ -21,15 +23,14 @@ namespace Components
             //wateposition.y = y;
             body.MovePosition(position);
         }*/
-        void OnCollisionEnter(Collision c)
-        {
-            float force = 3;
-            if (c.gameObject.layer == LayerMask.NameToLayer("Player"))
-            {
-                Vector3 dir = c.contacts[0].point - transform.position;
-                dir = dir.normalized;
-                body.AddForce(dir*force);
-            }
-        }
+        // void OnCollisionEnter(Collision c)
+        // {
+        //     if (c.gameObject.layer == LayerMask.NameToLayer("Player"))
+        //     {
+        //         Vector3 dir = c.contacts[0].point - transform.position;
+        //         dir = dir.normalized;
+        //         body.AddForce(dir*force);
+        //     }
+        // }
     }
 }
