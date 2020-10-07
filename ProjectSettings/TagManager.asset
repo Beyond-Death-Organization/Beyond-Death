@@ -34,9 +34,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - CollidesWithEnvironnementAndPlayer
+  - CollidesWithEnvironnement_NotWithPlayer
+  - CollidesWithPlayer_NotWithEnvironnement
   m_SortingLayers:
   - name: Default
     uniqueID: 0
