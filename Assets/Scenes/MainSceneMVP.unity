@@ -7504,52 +7504,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/rock_4_material (UnityEngine.Material).asset
 --- !u!1001 &778837578
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9040,59 +8994,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/dirt_wall-dirt_wall_material 1 (UnityEngine.Material)
-    1.asset
 --- !u!1001 &934352804
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14671,43 +14572,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/dirt_wall-dirt_wall_material (UnityEngine.Material)
-    1.asset
 --- !u!1 &1572023821
 GameObject:
   m_ObjectHideFlags: 0
@@ -15384,38 +15248,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/rocks_1_material (UnityEngine.Material).asset
 --- !u!1001 &1603762262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16909,55 +16741,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/rocks_2_material (UnityEngine.Material).asset
 --- !u!1001 &1776978166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17767,38 +17550,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/rocks_3_material (UnityEngine.Material).asset
 --- !u!1 &1861217693
 GameObject:
   m_ObjectHideFlags: 0
@@ -18097,62 +17848,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/dirt_wall-dirt_wall_material 1 (UnityEngine.Material).asset
 --- !u!1001 &1952321237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19298,51 +18993,6 @@ MonoBehaviour:
   m_Script: {fileID: 42730113, guid: cdc62267fc541fb4093a6d1ee350da2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Parent: {fileID: 0}
-  Originals:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  MeshAssetPath: Assets/Models/Combined/dirt_wall-dirt_wall_material (UnityEngine.Material).asset
 --- !u!1001 &2085223468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23968,6 +23618,46 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7870427
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.019180546
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.04092842
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.61524045
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.22517471
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.075205036
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.53507835
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 75.211
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 159.828
+      objectReference: {fileID: 0}
+    - target: {fileID: 553499219053100188, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -198.395
+      objectReference: {fileID: 0}
     - target: {fileID: 559409102073202867, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -26148,6 +25838,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1370791299596386541, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.105
+      objectReference: {fileID: 0}
     - target: {fileID: 1372025039815216377, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -26939,6 +26633,10 @@ PrefabInstance:
     - target: {fileID: 1691229422478173944, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1695657821935436040, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.105
       objectReference: {fileID: 0}
     - target: {fileID: 1696261449756463721, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28207,6 +27905,10 @@ PrefabInstance:
     - target: {fileID: 2271278256785434341, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 2273472594129924016, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.105
       objectReference: {fileID: 0}
     - target: {fileID: 2273760019031585944, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -33728,6 +33430,14 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4679566451844309970, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679566451844309970, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4680109064014146479, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
@@ -34547,6 +34257,14 @@ PrefabInstance:
     - target: {fileID: 5150870681795353177, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150870682236513929, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.957
+      objectReference: {fileID: 0}
+    - target: {fileID: 5150870682236513929, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
       objectReference: {fileID: 0}
     - target: {fileID: 5150870682236513935, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40320,6 +40038,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7481883000462546031, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.161
+      objectReference: {fileID: 0}
     - target: {fileID: 7482301926247212584, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -40359,6 +40081,10 @@ PrefabInstance:
     - target: {fileID: 7505653584291382991, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507079318585586844, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.161
       objectReference: {fileID: 0}
     - target: {fileID: 7507079318585586846, guid: 10ba1bc4cd5f075478d74ebdbdbf225f, type: 3}
       propertyPath: m_StaticEditorFlags
