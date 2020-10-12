@@ -24,6 +24,7 @@ public class CameraRotation : MonoBehaviour
     private void Update() {
         //TODO USE AXIS ID INSTEAD OF STRING COMPARISON
         cameraFreeLook.m_XAxis.m_InputAxisValue = Inputs.Player.GetAxis("Mouse X");
+        cameraFreeLook.m_YAxis.m_InputAxisValue = Inputs.Player.GetAxis("Mouse Y");
     }
 
     private void HandleControllerChange(Rewired.Player p, Controller c) {
