@@ -11,7 +11,7 @@ public class PlayerMovements : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 inputs;
-    private Vector3 direction = Vector3.zero;
+    private Vector3 direction;
 
     private Transform myTransform;
 
@@ -25,9 +25,14 @@ public class PlayerMovements : MonoBehaviour
 #endif
         myTransform = transform;
         rb = GetComponent<Rigidbody>();
+        direction = myTransform.forward;
     }
 
-    protected virtual void Start() { }
+    protected virtual void Start() {
+        //TODO DO SOMEWHERE ELSE ON MAIN BRANCH
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     protected virtual void Update() {
         inputs.x = playerRef.GetAxisRaw("Horizontal");
@@ -50,7 +55,7 @@ public class PlayerMovements : MonoBehaviour
         rb.velocity = movementsNormalized;
         
         //Rotate player toward movement direction
-        transform.rotation = Quaternion.LookRotation(transform.forward + movementsNormalized);
+        myTransform.rotation = Quaternion.LookRotation(myTransform.forward + movementsNormalized);
     }
 
     private void UpdateTargetPosition() {
