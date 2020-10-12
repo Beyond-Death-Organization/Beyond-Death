@@ -69,6 +69,7 @@ public class GameManagerEditor : Editor
 
             if (GUILayout.Button("Next Level")) { gameManager.NextLevel(); }
         }
+        
         GUILayout.EndVertical();
     }
 }
