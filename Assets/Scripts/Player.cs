@@ -2,14 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : PlayerMovements
+public class Player : JumpAbleObject
 {
-    public InputsComponent inputs;
-    
     protected override void Awake() {
         base.Awake();
-        inputs.Initialize();
-        playerRef = inputs.Player;
     }
 
     protected override void Start() {
