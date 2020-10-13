@@ -10,6 +10,8 @@ public class CameraRotation : MonoBehaviour
 
     public float MouseCameraRotationSpeed = 150;
     public float JoystickCameraRotationSpeed = 200;
+    public float MouseCameraZoomSpeed = 5;
+    public float JoystickCameraZoomSpeed = 1;
     
     private CinemachineFreeLook cameraFreeLook;
 
@@ -28,13 +30,21 @@ public class CameraRotation : MonoBehaviour
     }
 
     private void HandleControllerChange(Rewired.Player p, Controller c) {
-        if(c.type == ControllerType.Joystick)
+        if (c.type == ControllerType.Joystick) {
             SetCameraRotationSpeed(JoystickCameraRotationSpeed);
-        else
+            SetCameraZoomSpeed(JoystickCameraZoomSpeed);
+        }
+        else {
             SetCameraRotationSpeed(MouseCameraRotationSpeed);
+            SetCameraZoomSpeed(MouseCameraZoomSpeed);
+        }
     }
 
     private void SetCameraRotationSpeed(float speed) {
         cameraFreeLook.m_XAxis.m_MaxSpeed = speed;
+    }
+
+    private void SetCameraZoomSpeed(float speed) {
+        cameraFreeLook.m_YAxis.m_MaxSpeed = speed;
     }
 }
