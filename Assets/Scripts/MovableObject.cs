@@ -2,16 +2,18 @@
 using Cinemachine;
 using Rewired;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [RequireComponent(typeof(Rigidbody))]
 public class MovableObject : MonoBehaviour
 {
     public InputsComponent Inputs;
     public float MovementSpeed = 40;
-    public float LerpRotationSpedd = 3;
+    public float RotationLerpSpeed = 7;
 
     private Vector3 moveInputs;
     private Vector3 direction;
+    private Vector3 movementsNormalized;
 
     private Camera cameraLookingAtPlayer;
     private Transform myTransform;
@@ -44,11 +46,15 @@ public class MovableObject : MonoBehaviour
         direction = Quaternion.AngleAxis(forwardAngle, Vector3.up) * direction;
 
         //Normalize + adjust with Time.deltaTime
-        Vector3 movementsNormalized = direction.normalized * (MovementSpeed * Time.deltaTime);
+        movementsNormalized = direction.normalized * (MovementSpeed * Time.deltaTime);
 
-        //Rotate player toward movement direction
+        //Rotate player toward movement direction (slerp)
         if (moveInputs.sqrMagnitude >= 0.1f)
-            myTransform.rotation = Quaternion.LookRotation(movementsNormalized);
+            myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(movementsNormalized),
+                Time.deltaTime * RotationLerpSpeed);
+        else
+            movementsNormalized = Vector3.zero;
+        //myTransform.rotation = Quaternion.LookRotation(movementsNormalized);
 
         //Update forward vector
         forwardAngle = Mathf.SmoothDampAngle(forwardAngle, cameraLookingAtPlayer.transform.rotation.eulerAngles.y,
